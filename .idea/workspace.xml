@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="NONE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="a00a3f1f-a9de-486b-8e93-1c164e92b38e" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Traffic/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Traffic/App.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Traffic/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Traffic/app.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Traffic/babel.config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Traffic/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Traffic/traffic/.buckconfig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Traffic/traffic/.bundle/config" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Traffic/traffic/.eslintrc.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Traffic/traffic/.flowconfig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Traffic/traffic/.prettierrc.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Traffic/traffic/.ruby-version" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Traffic/traffic/.watchmanconfig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Traffic/traffic/App.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Traffic/traffic/Gemfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Traffic/traffic/__tests__/App-test.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Traffic/traffic/android/app/_BUCK" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Traffic/traffic/android/app/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Traffic/traffic/android/app/build_defs.bzl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Traffic/traffic/android/app/proguard-rules.pro" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Traffic/traffic/android/app/src/debug/AndroidManifest.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Traffic/traffic/android/app/src/debug/java/com/traffic/ReactNativeFlipper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Traffic/traffic/android/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Traffic/traffic/android/app/src/main/java/com/traffic/MainActivity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Traffic/traffic/android/app/src/main/java/com/traffic/MainApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Traffic/traffic/android/app/src/main/java/com/traffic/newarchitecture/MainApplicationReactNativeHost.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Traffic/traffic/android/app/src/main/java/com/traffic/newarchitecture/components/MainComponentsRegistry.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Traffic/traffic/android/app/src/main/java/com/traffic/newarchitecture/modules/MainApplicationTurboModuleManagerDelegate.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Traffic/traffic/android/app/src/main/jni/Android.mk" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Traffic/traffic/android/app/src/main/jni/MainApplicationModuleProvider.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Traffic/traffic/android/app/src/main/jni/MainApplicationModuleProvider.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Traffic/traffic/android/app/src/main/jni/MainApplicationTurboModuleManagerDelegate.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Traffic/traffic/android/app/src/main/jni/MainApplicationTurboModuleManagerDelegate.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Traffic/traffic/android/app/src/main/jni/MainComponentsRegistry.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Traffic/traffic/android/app/src/main/jni/MainComponentsRegistry.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Traffic/traffic/android/app/src/main/jni/OnLoad.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Traffic/traffic/android/app/src/main/res/drawable/rn_edit_text_material.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Traffic/traffic/android/app/src/main/res/mipmap-hdpi/ic_launcher.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Traffic/traffic/android/app/src/main/res/mipmap-hdpi/ic_launcher_round.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Traffic/traffic/android/app/src/main/res/mipmap-mdpi/ic_launcher.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Traffic/traffic/android/app/src/main/res/mipmap-mdpi/ic_launcher_round.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Traffic/traffic/android/app/src/main/res/mipmap-xhdpi/ic_launcher.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Traffic/traffic/android/app/src/main/res/mipmap-xhdpi/ic_launcher_round.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Traffic/traffic/android/app/src/main/res/mipmap-xxhdpi/ic_launcher.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Traffic/traffic/android/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Traffic/traffic/android/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Traffic/traffic/android/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Traffic/traffic/android/app/src/main/res/values/strings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Traffic/traffic/android/app/src/main/res/values/styles.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Traffic/traffic/android/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Traffic/traffic/android/gradle.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Traffic/traffic/android/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Traffic/traffic/android/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Traffic/traffic/android/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Traffic/traffic/android/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Traffic/traffic/android/settings.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Traffic/traffic/app.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Traffic/traffic/babel.config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Traffic/traffic/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Traffic/traffic/ios/.xcode.env" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Traffic/traffic/ios/Podfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Traffic/traffic/ios/traffic.xcodeproj/project.pbxproj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Traffic/traffic/ios/traffic.xcodeproj/xcshareddata/xcschemes/traffic.xcscheme" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Traffic/traffic/ios/traffic/AppDelegate.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Traffic/traffic/ios/traffic/AppDelegate.mm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Traffic/traffic/ios/traffic/Images.xcassets/AppIcon.appiconset/Contents.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Traffic/traffic/ios/traffic/Images.xcassets/Contents.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Traffic/traffic/ios/traffic/Info.plist" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Traffic/traffic/ios/traffic/LaunchScreen.storyboard" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Traffic/traffic/ios/traffic/main.m" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Traffic/traffic/ios/trafficTests/Info.plist" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Traffic/traffic/ios/trafficTests/trafficTests.m" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Traffic/traffic/metro.config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Traffic/traffic/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Traffic/traffic/yarn.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Traffic/yarn.lock" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2DpZHNzlkkNtJcrmR29FmQTxpwW" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;yarn&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Windows.old\Users\ayaan\Traffic-Recognition\ModelArts_Traffic" />
+    </key>
+  </component>
+  <component name="RunManager" selected="npm.start (1)">
+    <configuration name="android" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/ModelArts_Traffic/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="android" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="start (1)" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/Traffic/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="start" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="start" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/ModelArts_Traffic/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="start" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="npm.start (1)" />
+        <item itemvalue="npm.android" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a00a3f1f-a9de-486b-8e93-1c164e92b38e" name="Changes" comment="" />
+      <created>1661397900307</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1661397900307</updated>
+      <workItem from="1661397913012" duration="87000" />
+      <workItem from="1661398047510" duration="1225000" />
+      <workItem from="1661399310648" duration="1441000" />
+      <workItem from="1661406295666" duration="2180000" />
+      <workItem from="1661408587275" duration="127000" />
+      <workItem from="1661412303753" duration="834000" />
+      <workItem from="1661413424682" duration="159000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+</project>
