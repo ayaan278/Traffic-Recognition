@@ -1,8 +1,8 @@
-import { View, Text } from "react-native-web";
+import { View } from "react-native-web";
 import React from "react";
-import { Button } from 'react-native-paper';
+import { Button, Text } from 'react-native-paper';
 
-export default function index() {
+export default function Home() {
     return (
         <View
             style={{
