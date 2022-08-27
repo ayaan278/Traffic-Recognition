@@ -3,26 +3,30 @@
 // import { createNativeStackNavigator } from '@react-navigation/native-stack';
 // import { Button, Text } from 'react-native-paper';
 // import Home from '../components/templates/Home';
+// import Login from '../components/templates/Login';
+// import Signup from '../components/templates/Signup'
 //
 // const Stack = createNativeStackNavigator();
 //
 // const Routes = () => {
 //     return (
 //         <NavigationContainer>
-//             <Stack.Navigator>
+//             <Stack.Navigator initialRouteName="Home">
 //                 <Stack.Screen
 //                     name="Home"
 //                     component={Home}
-//                     // options={{ title: 'Welcome' }}
 //                 />
-//                 <Stack.Screen name="Profile" component={ProfileScreen} />
+//                 <Stack.Screen
+//                     name="Login"
+//                     component={Login}
+//                 />
+//                 <Stack.Screen
+//                     name="Signup"
+//                     component={Signup}
+//                 />
 //             </Stack.Navigator>
 //         </NavigationContainer>
 //     );
 // };
 //
 // export default Routes;
-//
-// const ProfileScreen = ({ navigation }) => {
-//     return <Text>This is Ayaan's profile</Text>;
-// };

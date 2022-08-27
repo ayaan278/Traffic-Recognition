@@ -5,13 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a00a3f1f-a9de-486b-8e93-1c164e92b38e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Traffic/android/src/components/templates/Signup.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Traffic/android/src/layout/Routes.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Traffic/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/Traffic/App.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Traffic/android/src/components/templates/Home.js" beforeDir="false" afterPath="$PROJECT_DIR$/Traffic/android/src/components/templates/Home.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Traffic/android/src/components/templates/Login.js" beforeDir="false" afterPath="$PROJECT_DIR$/Traffic/android/src/components/modules/NavMenu.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Traffic/android/src/components/templates/Signup.js" beforeDir="false" afterPath="$PROJECT_DIR$/Traffic/android/src/components/templates/Login.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Traffic/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/Traffic/App.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Traffic/android/src/components/templates/Home.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/Traffic/android/src/components/templates/Home.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Traffic/android/src/components/templates/Login.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/Traffic/android/src/components/templates/Login.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Traffic/android/src/layout/Routes.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/Traffic/android/src/Routes/Routes.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Traffic/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Traffic/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Traffic/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/Traffic/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Traffic/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Traffic/yarn.lock" afterDir="false" />
@@ -105,6 +103,8 @@
       <workItem from="1661413424682" duration="159000" />
       <workItem from="1661485381887" duration="2965000" />
       <workItem from="1661500213043" duration="4386000" />
+      <workItem from="1661590525761" duration="1854000" />
+      <workItem from="1661594152091" duration="1789000" />
     </task>
     <servers />
   </component>

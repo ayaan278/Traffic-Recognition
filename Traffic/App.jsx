@@ -2,39 +2,38 @@ import * as React from 'react';
 import { AppRegistry, View, Text } from 'react-native';
 import { Provider as PaperProvider } from 'react-native-paper';
 import { Button } from "react-native-paper";
-import Routes from "./android/src/layout/Routes";
-import { NavigationContainer } from '@react-navigation/native';
+// import Routes from "./android/src/Routes/Routes";
+import Home from "./android/src/components/templates/Home";
+import Login from "./android/src/components/templates/Login";
+import Signup from "./android/src/components/templates/Signup";
+import {NavigationContainer} from "@react-navigation/native";
+import {createNativeStackNavigator} from "@react-navigation/native-stack";
 
-export default function App() {
-    // const theme = {
-    //     ...DefaultTheme,
-    //     roundness: 2,
-    //     colors: {
-    //         ...DefaultTheme.colors,
-    //         primary: '#3498db',
-    //         accent: '#f1c40f',
-    //     }
-    // };
+const Stack = createNativeStackNavigator();
+
+function App() {
+
     return (
-        <NavigationContainer>
+        // <NavigationContainer>
             <PaperProvider >
-                <View
-                    style={{
-                        flex: 1,
-                        justifyContent: "center",
-                        alignItems: "center",
-                    }}
-                    >
-                    <Text>Universal React with Expo</Text>
-                    <Button raised theme={{ roundness: 3 }}
-                           >
-                        Press me
-                    </Button>
-                    <Routes/>
-                </View>
+                <Home/>
+                {/*<Stack.Navigator initialRouteName="Home">*/}
+                {/*    <Stack.Screen*/}
+                {/*        name="Home"*/}
+                {/*        component={Home}*/}
+                {/*    />*/}
+                {/*    <Stack.Screen*/}
+                {/*        name="Login"*/}
+                {/*        component={Login}*/}
+                {/*    />*/}
+                {/*    <Stack.Screen*/}
+                {/*        name="Signup"*/}
+                {/*        component={Signup}*/}
+                {/*    />*/}
+                {/*</Stack.Navigator>*/}
             </PaperProvider>
-        </NavigationContainer>
+        // </NavigationContainer>
     );
 }
 
-// AppRegistry.registerComponent('main', () => Main);
+AppRegistry.registerComponent('main', () => Main);
