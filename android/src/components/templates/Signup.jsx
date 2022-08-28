@@ -1,7 +1,7 @@
 import React from 'react';
 import { View, Text, Image, ScrollView, TextInput } from 'react-native';
 
-const Login = () => {
+const Signup = ({ navigation }) => {
     return (
         <ScrollView>
             <Text>Hello and Welcome!</Text>
@@ -42,4 +42,4 @@ const Login = () => {
     );
 }
 
-export default Login;
+export default Signup;

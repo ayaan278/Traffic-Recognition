@@ -5,14 +5,31 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a00a3f1f-a9de-486b-8e93-1c164e92b38e" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.expo-shared/assets.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/android/src/components/templates/Home.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/adaptive-icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/favicon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/splash.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Traffic/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/Traffic/App.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Traffic/android/src/components/templates/Home.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/Traffic/android/src/components/templates/Home.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Traffic/android/src/components/templates/Login.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/Traffic/android/src/components/templates/Login.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Traffic/android/src/layout/Routes.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/Traffic/android/src/Routes/Routes.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Traffic/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Traffic/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Traffic/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/Traffic/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Traffic/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Traffic/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Traffic/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Traffic/.prettierrc.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Traffic/App.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Traffic/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Traffic/android/src/Routes/Routes.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/android/src/Routes/Routes.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Traffic/android/src/components/modules/NavMenu.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/android/src/components/modules/NavMenu.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Traffic/android/src/components/templates/Home.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Traffic/android/src/components/templates/Login.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/android/src/components/templates/Login.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Traffic/android/src/components/templates/Signup.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/android/src/components/templates/Signup.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Traffic/app.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Traffic/babel.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/babel.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Traffic/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Traffic/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Traffic/yarn.lock" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,22 +50,25 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;yarn&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "WebServerToolWindowFactoryState": "false",
+    "node.js.detected.package.eslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "nodejs_package_manager_path": "yarn",
+    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Windows.old\Users\ayaan\Traffic-Recognition\Native" />
+      <recent name="C:\Windows.old\Users\ayaan\Traffic-Recognition\Native\android" />
       <recent name="C:\Windows.old\Users\ayaan\Traffic-Recognition\Traffic" />
       <recent name="C:\Windows.old\Users\ayaan\Traffic-Recognition\ModelArts_Traffic" />
     </key>
   </component>
-  <component name="RunManager" selected="npm.start (1)">
+  <component name="RunManager" selected="npm.start (3)">
     <configuration name="android" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/ModelArts_Traffic/package.json" />
       <command value="run" />
@@ -69,6 +89,26 @@
       <envs />
       <method v="2" />
     </configuration>
+    <configuration name="start (2)" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/Native/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="start" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="start (3)" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="start" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
     <configuration name="start" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/ModelArts_Traffic/package.json" />
       <command value="run" />
@@ -81,6 +121,8 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="npm.start (3)" />
+        <item itemvalue="npm.start (2)" />
         <item itemvalue="npm.start (1)" />
         <item itemvalue="npm.android" />
       </list>
@@ -105,6 +147,10 @@
       <workItem from="1661500213043" duration="4386000" />
       <workItem from="1661590525761" duration="1854000" />
       <workItem from="1661594152091" duration="1789000" />
+      <workItem from="1661675183071" duration="1444000" />
+      <workItem from="1661677038184" duration="46000" />
+      <workItem from="1661677331230" duration="2082000" />
+      <workItem from="1661679743276" duration="138000" />
     </task>
     <servers />
   </component>
@@ -124,5 +170,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <ignored-roots>
+      <path value="$PROJECT_DIR$/Native" />
+    </ignored-roots>
   </component>
 </project>
