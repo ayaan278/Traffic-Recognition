@@ -5,31 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a00a3f1f-a9de-486b-8e93-1c164e92b38e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.expo-shared/assets.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/App.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/android/src/components/templates/Home.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/adaptive-icon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/favicon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/icon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/splash.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/android/ android-manifest.plugin.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/android/src/components/modules/Camera.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/android/src/components/modules/Header.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codes.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Traffic/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Traffic/.prettierrc.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Traffic/App.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Traffic/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Traffic/android/src/Routes/Routes.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/android/src/Routes/Routes.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Traffic/android/src/components/modules/NavMenu.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/android/src/components/modules/NavMenu.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Traffic/android/src/components/templates/Home.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Traffic/android/src/components/templates/Login.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/android/src/components/templates/Login.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Traffic/android/src/components/templates/Signup.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/android/src/components/templates/Signup.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Traffic/app.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Traffic/babel.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/babel.config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Traffic/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Traffic/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Traffic/yarn.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/src/components/modules/NavMenu.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/android/src/components/modules/NavMenu.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/src/components/templates/Home.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/android/src/components/templates/Home.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.json" beforeDir="false" afterPath="$PROJECT_DIR$/app.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,16 +36,16 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "WebServerToolWindowFactoryState": "false",
-    "node.js.detected.package.eslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "nodejs_package_manager_path": "yarn",
-    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;yarn&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;project.propVCSSupport.DirectoryMappings&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Windows.old\Users\ayaan\Traffic-Recognition\Native" />
@@ -68,49 +54,9 @@
       <recent name="C:\Windows.old\Users\ayaan\Traffic-Recognition\ModelArts_Traffic" />
     </key>
   </component>
-  <component name="RunManager" selected="npm.start (3)">
-    <configuration name="android" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
-      <package-json value="$PROJECT_DIR$/ModelArts_Traffic/package.json" />
-      <command value="run" />
-      <scripts>
-        <script value="android" />
-      </scripts>
-      <node-interpreter value="project" />
-      <envs />
-      <method v="2" />
-    </configuration>
-    <configuration name="start (1)" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
-      <package-json value="$PROJECT_DIR$/Traffic/package.json" />
-      <command value="run" />
-      <scripts>
-        <script value="start" />
-      </scripts>
-      <node-interpreter value="project" />
-      <envs />
-      <method v="2" />
-    </configuration>
-    <configuration name="start (2)" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
-      <package-json value="$PROJECT_DIR$/Native/package.json" />
-      <command value="run" />
-      <scripts>
-        <script value="start" />
-      </scripts>
-      <node-interpreter value="project" />
-      <envs />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager">
     <configuration name="start (3)" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
-      <command value="run" />
-      <scripts>
-        <script value="start" />
-      </scripts>
-      <node-interpreter value="project" />
-      <envs />
-      <method v="2" />
-    </configuration>
-    <configuration name="start" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
-      <package-json value="$PROJECT_DIR$/ModelArts_Traffic/package.json" />
       <command value="run" />
       <scripts>
         <script value="start" />
@@ -122,9 +68,6 @@
     <recent_temporary>
       <list>
         <item itemvalue="npm.start (3)" />
-        <item itemvalue="npm.start (2)" />
-        <item itemvalue="npm.start (1)" />
-        <item itemvalue="npm.android" />
       </list>
     </recent_temporary>
   </component>
@@ -151,6 +94,8 @@
       <workItem from="1661677038184" duration="46000" />
       <workItem from="1661677331230" duration="2082000" />
       <workItem from="1661679743276" duration="138000" />
+      <workItem from="1661759625713" duration="261000" />
+      <workItem from="1661774880691" duration="4700000" />
     </task>
     <servers />
   </component>

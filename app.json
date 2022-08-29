@@ -11,6 +11,14 @@
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
+    "plugins": [
+      [
+        "expo-camera",
+        {
+          "locationWhenInUsePermission": "Allow $(Traffic Recognition) to access your location"
+        }
+      ]
+    ],
     "updates": {
       "fallbackToCacheTimeout": 0
     },

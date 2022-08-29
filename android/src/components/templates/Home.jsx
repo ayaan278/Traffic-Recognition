@@ -11,8 +11,8 @@ export default function Home({ navigation }) {
                 alignItems: "center",
             }}
         >
-            <Text>Universal React</Text>
-
+            <Button mode="contained" onPress={() => navigation.navigate('Signup')}>arrow key</Button>
+            <Button mode="contained" onPress={() => navigation.navigate('TrafficCamera')}>Camera</Button>
         </View>
     );
 }

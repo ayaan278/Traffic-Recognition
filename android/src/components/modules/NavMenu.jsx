@@ -2,23 +2,33 @@ import React, { useState } from 'react';
 import { DrawerSection, DrawerItem } from 'react-native-paper';
 
 const NavMenu = () => {
-    const [isOpen, setIsOpen] = useState(false);
+    // const [isOpen, setIsOpen] = useState('');
 
-        const { active } = this.state;
         return (
-            <DrawerSection title="Some title">
+            <DrawerSection title="Your name">
                 <DrawerItem
-                    label="First Item"
-                    active={active === 'First Item'}
-                    onPress={() => { this.setState({ active: 'First Item' }); }}
+                    label="Account Settings"
+                    // active={isOpen === 'Account Settings'}
+                    // onPress={() => { this.setState({ setIsOpen: 'Account Settings' }); }}
                 />
                 <DrawerItem
-                    label="Second Item"
-                    active={active === 'Second Item'}
-                    onPress={() => { this.setState({ active: 'Second Item' }); }}
+                    label="Notifications"
+                    // active={isOpen === 'Notifications'}
+                    // onPress={() => { this.setState({ setIsOpen: 'Notifications' }); }}
+                />
+                <DrawerItem
+                    label="Privacy & Data"
+                    // active={isOpen === 'Privacy & Data'}
+                    // onPress={() => { this.setState({ setIsOpen: 'Privacy & Data' }); }}
+                />
+                <DrawerItem
+                    label="Log Out"
+                    // active={isOpen === 'Log Out'}
+                    // onPress={() => { this.setState({ setIsOpen: 'Log Out' }); }}
                 />
             </DrawerSection>
         );
 }
 
 export default NavMenu;
+
