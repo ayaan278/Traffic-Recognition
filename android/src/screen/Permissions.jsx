@@ -2,7 +2,7 @@ import { View, Text } from "react-native";
 import React from "react";
 import { Button } from 'react-native-paper';
 
-export default function Home({ navigation }) {
+export default function Permissions({ navigation }) {
     return (
         <View
             style={{
@@ -11,8 +11,7 @@ export default function Home({ navigation }) {
                 alignItems: "center",
             }}
         >
-            <Button mode="contained" onPress={() => navigation.navigate('Signup')}>arrow key</Button>
-            <Button mode="contained" onPress={() => navigation.navigate('TrafficCamera')}>Camera</Button>
+            <Text>All the permissions come here</Text>
         </View>
     );
 }

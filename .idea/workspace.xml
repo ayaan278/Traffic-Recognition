@@ -5,15 +5,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a00a3f1f-a9de-486b-8e93-1c164e92b38e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/android/ android-manifest.plugin.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/android/src/components/modules/Camera.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/android/src/components/modules/Header.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/codes.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/android/src/screen/Login.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/android/src/screen/Permissions.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/android/src/screen/PrivacyAndData.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/android/src/screen/Signup.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/android/src/theme/Colors.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/android/src/theme/Styles.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/arrow_back.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/src/components/modules/NavMenu.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/android/src/components/modules/NavMenu.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/src/components/templates/Home.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/android/src/components/templates/Home.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.json" beforeDir="false" afterPath="$PROJECT_DIR$/app.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/src/Routes/Routes.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/android/src/routes/Routes.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/src/components/modules/Camera.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/android/src/components/Camera.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/src/components/modules/Header.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/android/src/components/Header.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/src/components/modules/NavMenu.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/android/src/components/NavMenu.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/src/components/templates/Home.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/android/src/screen/Home.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/src/components/templates/Login.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/src/components/templates/Signup.jsx" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
@@ -48,10 +55,11 @@
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Windows.old\Users\ayaan\Traffic-Recognition\android\src\components" />
+      <recent name="C:\Windows.old\Users\ayaan\Traffic-Recognition\android\src\screen" />
       <recent name="C:\Windows.old\Users\ayaan\Traffic-Recognition\Native" />
       <recent name="C:\Windows.old\Users\ayaan\Traffic-Recognition\Native\android" />
       <recent name="C:\Windows.old\Users\ayaan\Traffic-Recognition\Traffic" />
-      <recent name="C:\Windows.old\Users\ayaan\Traffic-Recognition\ModelArts_Traffic" />
     </key>
   </component>
   <component name="RunManager">
@@ -95,7 +103,8 @@
       <workItem from="1661677331230" duration="2082000" />
       <workItem from="1661679743276" duration="138000" />
       <workItem from="1661759625713" duration="261000" />
-      <workItem from="1661774880691" duration="4700000" />
+      <workItem from="1661774880691" duration="5034000" />
+      <workItem from="1661831785136" duration="9415000" />
     </task>
     <servers />
   </component>
