@@ -31,7 +31,7 @@ export default function Login({ navigation }) {
 
 
     return (
-        <View styles={styles.view}>
+        <View style={styles.view}>
             {/*<Logo />*/}
             {/*<Header>Welcome back.</Header>*/}
             <TextInput
@@ -48,7 +48,7 @@ export default function Login({ navigation }) {
                 textContentType="emailAddress"
                 keyboardType="email-address"
             />
-            <HelperText type="error" visible={hasErrors()}>
+            <HelperText type="error" onchange={hasErrors()}>
                 Email address is invalid!
             </HelperText>
             <TextInput

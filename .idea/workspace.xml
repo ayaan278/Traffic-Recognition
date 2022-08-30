@@ -5,22 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a00a3f1f-a9de-486b-8e93-1c164e92b38e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/android/src/screen/Login.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/android/src/screen/Permissions.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/android/src/screen/PrivacyAndData.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/android/src/screen/Signup.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/android/src/theme/Colors.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/android/src/theme/Styles.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/arrow_back.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/android/src/screen/AccountSettings.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/src/Routes/Routes.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/android/src/routes/Routes.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/src/components/modules/Camera.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/android/src/components/Camera.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/src/components/modules/Header.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/android/src/components/Header.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/src/components/modules/NavMenu.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/android/src/components/NavMenu.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/src/components/templates/Home.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/android/src/screen/Home.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/src/components/templates/Login.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/src/components/templates/Signup.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/src/components/NavMenu.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/android/src/components/NavMenu.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/src/routes/Routes.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/android/src/routes/Routes.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/src/screen/Login.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/android/src/screen/Login.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/src/screen/Signup.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/android/src/screen/Signup.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/src/theme/Styles.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/android/src/theme/Styles.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
@@ -104,7 +96,8 @@
       <workItem from="1661679743276" duration="138000" />
       <workItem from="1661759625713" duration="261000" />
       <workItem from="1661774880691" duration="5034000" />
-      <workItem from="1661831785136" duration="9415000" />
+      <workItem from="1661831785136" duration="9750000" />
+      <workItem from="1661861113836" duration="1487000" />
     </task>
     <servers />
   </component>
@@ -127,5 +120,17 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$/Native" />
     </ignored-roots>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/android/src/routes/Routes.jsx</url>
+          <line>32</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

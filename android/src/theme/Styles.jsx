@@ -3,13 +3,15 @@ import {Colors} from './Colors'
 
 export default StyleSheet.create({
     view:{
-        flex:1,
-        flexDirection:'row',
-        alignItems:'center',
-        justifyContent:'center',
+        // flex:1,
+        // flexDirection:'row',
+        // alignItems:'center',
+        // justifyContent:'center',
         marginTop: 150,
-        marginLeft: 10,
-        marginRight: 10,
+        // marginLeft: 10,
+        // marginRight: 10,
+        backgroundColor: Colors.colors.primary,
+        // height: full,
     },
     forgotPassword: {
         width: '100%',
@@ -39,4 +41,12 @@ export default StyleSheet.create({
         fontWeight: 'bold',
         color: Colors.colors.secondary,
     },
+    drawer_item: {
+        padding: 10,
+        margin: 20,
+
+    },
+    drawer_item_hover: {
+        backgroundColor: '#64ffda',
+    }
 })

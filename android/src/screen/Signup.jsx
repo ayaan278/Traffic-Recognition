@@ -36,7 +36,7 @@ export default function RegisterScreen({ navigation }) {
 
 
     return (
-        <View styles={styles.view}>
+        <View style={styles.view}>
             <TextInput
                 label="Name"
                 returnKeyType="next"
@@ -89,7 +89,7 @@ export default function RegisterScreen({ navigation }) {
             <Button
                 mode="contained"
                 // onPress={onSignUpPressed}
-                styles={styles.button}
+                style={styles.button}
             >
                 Sign Up
             </Button>
