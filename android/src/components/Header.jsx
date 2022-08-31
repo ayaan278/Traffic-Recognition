@@ -4,12 +4,16 @@ import { Platform } from 'react-native';
 
 const MORE_ICON = Platform.OS === 'ios' ? 'dots-horizontal' : 'dots-vertical';
 
-const Header = () => (
-    <Appbar.Header>
-        <Appbar.Content title="Traffic Recognition" />
-        {/*<Appbar.Action icon="magnify" onPress={() => {}} />*/}
-        {/*<Appbar.Action icon={MORE_ICON} onPress={() => {}} />*/}
-    </Appbar.Header>
-);
+const Header = ({ navigation }) => {
+    return (
+        <Appbar.Header>
+            <Appbar.Action
+                title="Open drawer"
+                onPress={() => navigation.navigate('Navmenu')}
+                icon={MORE_ICON}/>
+            <Appbar.Content title="hello"/>
+        </Appbar.Header>
+    )
+}
 
 export default Header;

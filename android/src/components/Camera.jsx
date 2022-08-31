@@ -1,6 +1,7 @@
 import { Camera, CameraType } from 'expo-camera';
 import { useState } from 'react';
 import { Button, StyleSheet, Text, TouchableOpacity, View } from 'react-native';
+import BottomBar from "./BottomBar";
 
 export default function TrafficCamera() {
     const [type, setType] = useState(CameraType.back);
@@ -37,6 +38,7 @@ export default function TrafficCamera() {
                         onPress={toggleCameraType}>
                         <Text style={styles.text}>Flip Camera</Text>
                     </TouchableOpacity>
+                    <BottomBar/>
                 </View>
             </Camera>
         </View>
@@ -55,7 +57,6 @@ const styles = StyleSheet.create({
         flex: 1,
         flexDirection: 'row',
         backgroundColor: 'transparent',
-        margin: 64,
     },
     button: {
         flex: 1,

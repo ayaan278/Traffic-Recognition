@@ -2,7 +2,8 @@ import React, { useRef, useState } from "react";
 import { Button, DrawerLayoutAndroid, Text, StyleSheet, View } from "react-native";
 import { Appbar } from 'react-native-paper';
 import { Platform } from 'react-native';
-import {createNativeStackNavigator} from "@react-navigation/native-stack";
+import {createNativeStackNavigator,} from "@react-navigation/native-stack";
+// import { createDrawerNavigator } from '@react-navigation/drawer';
 import Login from '../screen/Login'
 import Signup from '../screen/Signup'
 import Home from '../screen/Home'
@@ -11,30 +12,18 @@ import Permissions from '../screen/Permissions'
 import PrivacyAndData from '../screen/PrivacyAndData'
 import AccountSettings from '../screen/AccountSettings'
 import NavMenu from "../components/NavMenu";
+import Header from "../components/Header";
 
 const Stack = createNativeStackNavigator();
 
 const MORE_ICON = Platform.OS === 'ios' ? 'dots-horizontal' : 'menu';
 
 const Routes = () => {
-    const drawer = useRef(null);
 
     return (
-        <DrawerLayoutAndroid
-            ref={drawer}
-            drawerWidth={300}
-            drawerPosition={"left"}
-            renderNavigationView={NavMenu}
-        >
-            <Appbar.Header>
-                <Appbar.Action
-                    title="Open drawer"
-                    onPress={() => drawer.current.openDrawer()}
-                    icon={MORE_ICON}/>
-                <Appbar.Content title="Traffic Recognition" />
-            </Appbar.Header>
-
-            <Stack.Navigator intitialRouteName={"Home"}>
+            <Stack.Navigator intitialRouteName={"Home"} screenOptions={{
+                headerShown: false
+            }}>
                 <Stack.Screen name={"Home"} component={Home}/>
                 <Stack.Screen name={"Signup"} component={Signup}/>
                 <Stack.Screen name={"Login"} component={Login}/>
@@ -42,13 +31,10 @@ const Routes = () => {
                 <Stack.Screen name={"Permissions"} component={Permissions}/>
                 <Stack.Screen name={"PrivacyAndData"} component={PrivacyAndData}/>
                 <Stack.Screen name={"AccountSettings"} component={AccountSettings}/>
+                <Stack.Screen name={"Navmenu"} component={NavMenu}/>
+                <Stack.Screen name={"Header"} component={Header}/>
             </Stack.Navigator>
-        </DrawerLayoutAndroid>
     );
 };
-
-const styles = StyleSheet.create({
-
-});
 
 export default Routes;

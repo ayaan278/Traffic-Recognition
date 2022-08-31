@@ -2,16 +2,31 @@ import {StyleSheet} from "react-native";
 import {Colors} from './Colors'
 
 export default StyleSheet.create({
-    view:{
-        // flex:1,
-        // flexDirection:'row',
-        // alignItems:'center',
-        // justifyContent:'center',
+    draw_view:{
+        height: '100%',
+        width: '100%',
+        backgroundColor: Colors.colors.secondary,
+    },
+    draw_section:{
         marginTop: 150,
-        // marginLeft: 10,
-        // marginRight: 10,
+        paddingTop: 20,
+        height: '100%',
+        width: '80%',
         backgroundColor: Colors.colors.primary,
-        // height: full,
+    },
+    view:{
+        borderTopLeftRadius: 20,
+        borderTopRightRadius: 20,
+        height: '100%',
+        marginTop: 100,
+        paddingTop: 25,
+        paddingBottom: 20,
+        paddingRight: 10,
+        paddingLeft: 10,
+        backgroundColor: 'white',
+    },
+    header:{
+        width: '100%',
     },
     forgotPassword: {
         width: '100%',
@@ -29,12 +44,15 @@ export default StyleSheet.create({
         margin: 12,
         borderWidth: 1,
         padding: 10,
+        borderRadius: 10,
+        backgroundColor: Colors.colors.primary,
     },
     button: {
         margin: 15,
+        backgroundColor: Colors.colors.secondary,
     },
     forgot: {
-        fontSize: 13,
+        fontSize: 15,
         color: Colors.colors.secondary,
     },
     link: {
@@ -44,9 +62,8 @@ export default StyleSheet.create({
     drawer_item: {
         padding: 10,
         margin: 20,
-
     },
     drawer_item_hover: {
-        backgroundColor: '#64ffda',
+        backgroundColor: Colors.colors.secondary,
     }
 })
