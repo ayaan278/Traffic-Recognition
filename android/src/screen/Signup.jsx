@@ -2,7 +2,6 @@ import React, { useState } from 'react'
 import {View, StyleSheet, TouchableOpacity, TextInput} from 'react-native'
 import {Text, Button, HelperText} from 'react-native-paper'
 import styles from "../theme/Styles";
-// import { theme } from '../core/theme'
 // import { emailValidator } from '../helpers/emailValidator'
 // import { passwordValidator } from '../helpers/passwordValidator'
 // import { nameValidator } from '../helpers/nameValidator'

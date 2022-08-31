@@ -7,7 +7,7 @@ export const Colors = {
         text: '#000000',
         primary: '#DDDDDD',
         secondary: '#30475E',
-        thirdly: '#1597BB',
+        thirdly: '#6ba9d5',
         error: '#FF9F29',
     },
 }

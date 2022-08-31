@@ -11,8 +11,15 @@ export default StyleSheet.create({
         marginTop: 150,
         paddingTop: 20,
         height: '100%',
-        width: '80%',
+        width: '85%',
         backgroundColor: Colors.colors.primary,
+    },
+    draw_section_opposite:{
+        position: 'absolute',
+        height: '100%',
+        width: '15%',
+        backgroundColor: Colors.colors.thirdly,
+        right: 0,
     },
     view:{
         borderTopLeftRadius: 20,
@@ -65,5 +72,10 @@ export default StyleSheet.create({
     },
     drawer_item_hover: {
         backgroundColor: Colors.colors.secondary,
+    },
+    icon_button_opposite: {
+        flex: 1,
+        alignSelf: 'center',
+        justifyContent: 'center',
     }
 })

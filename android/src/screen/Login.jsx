@@ -2,9 +2,6 @@ import React, { useState } from 'react'
 import {TouchableOpacity, View, TextInput} from 'react-native'
 import {Text, Button, HelperText} from 'react-native-paper'
 import styles from '../theme/Styles';
-import Colors from '../theme/Colors';
-
-// import { theme } from '../core/theme'
 // import { emailValidator } from '../helpers/emailValidator'
 // import { passwordValidator } from '../helpers/passwordValidator'
 
@@ -12,22 +9,19 @@ export default function Login({ navigation }) {
     const [email, setEmail] = useState({ value: '', error: '' })
     const [password, setPassword] = useState({ value: '', error: '' })
 
-    // const onLoginPressed = () => {
-    //     const emailError = emailValidator(email.value)
-    //     const passwordError = passwordValidator(password.value)
-    //     if (emailError || passwordError) {
-    //         setEmail({ ...email, error: emailError })
-    //         setPassword({ ...password, error: passwordError })
-    //         return
-    //     }
+    const onLoginPressed = () => {
+        // const emailError = emailValidator(email.value)
+        // const passwordError = passwordValidator(password.value)
+        // if (emailError || passwordError) {
+        //     setEmail({ ...email, error: emailError })
+        //     setPassword({ ...password, error: passwordError })
+        //     return
+        // }
     //     navigation.reset({
     //         index: 0,
     //         routes: [{ name: 'Dashboard' }],
     //     })
-    // }
-    const hasErrors = () => {
-        return !email.value.includes('@');
-    };
+    }
 
 
     return (
@@ -48,9 +42,6 @@ export default function Login({ navigation }) {
                 textContentType="emailAddress"
                 keyboardType="email-address"
             />
-            <HelperText type="error" onchange={hasErrors()}>
-                Email address is invalid!
-            </HelperText>
             <TextInput
                 label="Password"
                 placeholder="Password"
@@ -70,7 +61,7 @@ export default function Login({ navigation }) {
                 </TouchableOpacity>
             </View>
             <Button mode="contained" style={styles.button}
-                    // onPress={onLoginPressed}
+                    onPress={onLoginPressed}
             >
                 Login
             </Button>

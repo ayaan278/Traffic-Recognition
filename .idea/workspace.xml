@@ -5,23 +5,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a00a3f1f-a9de-486b-8e93-1c164e92b38e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/android/src/components/BottomBar.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/android/src/components/SpeechButton.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/android/src/routes/DrawerRoutes.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/android/src/components/Camera.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/android/src/components/Camera.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/src/components/Header.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/android/src/components/Header.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/src/components/Header.jsx" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/android/src/components/NavMenu.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/android/src/components/NavMenu.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/android/src/routes/Routes.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/android/src/routes/Routes.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/android/src/screen/AccountSettings.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/android/src/screen/AccountSettings.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/android/src/screen/Home.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/android/src/screen/Home.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/src/screen/Login.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/android/src/screen/Login.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/android/src/screen/Permissions.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/android/src/screen/Permissions.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/android/src/screen/PrivacyAndData.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/android/src/screen/PrivacyAndData.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/src/screen/Signup.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/android/src/screen/Signup.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/android/src/theme/Colors.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/android/src/theme/Colors.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/android/src/theme/Styles.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/android/src/theme/Styles.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.json" beforeDir="false" afterPath="$PROJECT_DIR$/app.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,11 +51,11 @@
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Windows.old\Users\ayaan\Traffic-Recognition\android\src\components\elements" />
+      <recent name="C:\Windows.old\Users\ayaan\Traffic-Recognition\android\src\components\layout" />
       <recent name="C:\Windows.old\Users\ayaan\Traffic-Recognition\android\src\components" />
       <recent name="C:\Windows.old\Users\ayaan\Traffic-Recognition\android\src\screen" />
       <recent name="C:\Windows.old\Users\ayaan\Traffic-Recognition\Native" />
-      <recent name="C:\Windows.old\Users\ayaan\Traffic-Recognition\Native\android" />
-      <recent name="C:\Windows.old\Users\ayaan\Traffic-Recognition\Traffic" />
     </key>
   </component>
   <component name="RunManager">
@@ -106,6 +103,8 @@
       <workItem from="1661831785136" duration="9750000" />
       <workItem from="1661861113836" duration="1487000" />
       <workItem from="1661918583713" duration="9205000" />
+      <workItem from="1661930621006" duration="2524000" />
+      <workItem from="1661934803966" duration="3383000" />
     </task>
     <servers />
   </component>

@@ -1,7 +1,8 @@
 import React, { useRef, useState } from "react";
 import { Button, DrawerLayoutAndroid, Text, StyleSheet, View } from "react-native";
-import { Drawer, Divider } from 'react-native-paper';
+import { Drawer, Divider, IconButton } from 'react-native-paper';
 import styles from '../theme/Styles'
+import {Colors} from '../theme/Colors'
 
 const NavMenu = ({navigation}) => {
         return(
@@ -39,6 +40,16 @@ const NavMenu = ({navigation}) => {
                         style={styles.drawer_item}
                         icon="logout"
                         label="Logout"
+                    />
+                </Drawer.Section>
+                <Drawer.Section style={styles.draw_section_opposite}>
+                    <IconButton
+                        style={styles.icon_button_opposite}
+                        icon="arrow-left"
+                        iconColor= {Colors.colors.secondary}
+                        // mode={'contained'}
+                        size={35}
+                        onPress={() => navigation.goBack()}
                     />
                 </Drawer.Section>
             </View>

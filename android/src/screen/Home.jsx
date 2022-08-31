@@ -2,7 +2,6 @@ import {View, Text, Platform} from "react-native";
 import React from "react";
 import {Appbar, Button} from 'react-native-paper';
 import SpeechButton from "../components/SpeechButton";
-import Header from "../components/Header";
 import styles from "../theme/Styles"
 
 const MORE_ICON = Platform.OS === 'ios' ? 'dots-horizontal' : 'menu';
@@ -12,11 +11,7 @@ export default function Home({ navigation }) {
         <View
         >
             <Appbar.Header style={styles.header} mode={'small'}>
-                <Appbar.BackAction
-                    onPress={() => {}}
-                    title="Go Back"
-                    icon={'arrow-left'}/>
-                <Appbar.Content title="hello"/>
+                <Appbar.Content title="Home"/>
                 <Appbar.Action
                     title="Open drawer"
                     onPress={() => navigation.navigate('Navmenu')}

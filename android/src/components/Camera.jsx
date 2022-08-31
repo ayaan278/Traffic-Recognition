@@ -2,7 +2,7 @@ import { Camera, CameraType } from 'expo-camera';
 import { useState } from 'react';
 import { Button, StyleSheet, Text, TouchableOpacity, View } from 'react-native';
 import BottomBar from "./BottomBar";
-
+import styles from '../theme/Styles'
 export default function TrafficCamera() {
     const [type, setType] = useState(CameraType.back);
     const [permission, requestPermission] = Camera.useCameraPermissions();
@@ -19,7 +19,9 @@ export default function TrafficCamera() {
                 <Text style={{ textAlign: 'center' }}>
                     We need your permission to show the camera
                 </Text>
-                <Button onPress={requestPermission} title="grant permission" />
+                <Button style={styles.button}
+                    onPress={requestPermission}
+                    title="Grant permission" />
             </View>
         );
     }
@@ -28,10 +30,13 @@ export default function TrafficCamera() {
             current === CameraType.back ? CameraType.front : CameraType.back
         ));
     }
+    function startModel(){
+
+    }
 
     return (
         <View style={styles.container}>
-            <Camera style={styles.camera} type={type}>
+            <Camera style={styles.camera} type={type} onCameraReady={startModel}>
                 <View style={styles.buttonContainer}>
                     <TouchableOpacity
                         style={styles.button}

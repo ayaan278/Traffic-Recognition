@@ -12,7 +12,6 @@ import Permissions from '../screen/Permissions'
 import PrivacyAndData from '../screen/PrivacyAndData'
 import AccountSettings from '../screen/AccountSettings'
 import NavMenu from "../components/NavMenu";
-import Header from "../components/Header";
 
 const Stack = createNativeStackNavigator();
 
@@ -32,7 +31,6 @@ const Routes = () => {
                 <Stack.Screen name={"PrivacyAndData"} component={PrivacyAndData}/>
                 <Stack.Screen name={"AccountSettings"} component={AccountSettings}/>
                 <Stack.Screen name={"Navmenu"} component={NavMenu}/>
-                <Stack.Screen name={"Header"} component={Header}/>
             </Stack.Navigator>
     );
 };
