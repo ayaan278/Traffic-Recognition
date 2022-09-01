@@ -34,7 +34,7 @@ export default StyleSheet.create({
         borderTopLeftRadius: 20,
         borderTopRightRadius: 20,
         height: '100%',
-        marginTop: 100,
+        marginTop: 120,
         paddingTop: 25,
         paddingBottom: 20,
         paddingRight: 10,
@@ -56,7 +56,7 @@ export default StyleSheet.create({
         marginTop: 4,
     },
     input: {
-        height: 40,
+        height: 50,
         margin: 12,
         borderWidth: 1,
         padding: 10,
@@ -86,5 +86,20 @@ export default StyleSheet.create({
         flex: 1,
         alignSelf: 'center',
         justifyContent: 'center',
+    },
+    permissions_view:{
+        padding: 20,
+        marginVertical: 10,
+        width: '100%',
+    },
+    permissions_text:{
+        width: '80%',
+        fontSize: 18,
+        fontWeight: "normal",
+    },
+    permissions_switch: {
+        width: '20%',
+        position: 'absolute',
+        right: 5,
     }
 })

@@ -17,7 +17,7 @@ const NavMenu = ({navigation}) => {
     }
         return(
             <View style={styles.draw_view}>
-                <Text style={styles.draw_text}>{auth.currentUser?.email}</Text>
+                <Text style={styles.draw_text}>{auth.currentUser?.displayName}</Text>
                 <Drawer.Section style={styles.draw_section}>
                     <Drawer.Item
                         style={styles.drawer_item}

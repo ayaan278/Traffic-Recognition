@@ -3,7 +3,6 @@ import { Button, DrawerLayoutAndroid, Text, StyleSheet, View } from "react-nativ
 import { Appbar } from 'react-native-paper';
 import { Platform } from 'react-native';
 import {createNativeStackNavigator,} from "@react-navigation/native-stack";
-// import { createDrawerNavigator } from '@react-navigation/drawer';
 import Login from '../screen/Login'
 import Signup from '../screen/Signup'
 import Home from '../screen/Home'
@@ -20,12 +19,12 @@ const MORE_ICON = Platform.OS === 'ios' ? 'dots-horizontal' : 'menu';
 const Routes = () => {
 
     return (
-            <Stack.Navigator intitialRouteName={"Home"} screenOptions={{
+            <Stack.Navigator screenOptions={{
                 headerShown: false
             }}>
-                <Stack.Screen name={"Home"} component={Home}/>
-                <Stack.Screen name={"Signup"} component={Signup}/>
                 <Stack.Screen name={"Login"} component={Login}/>
+                <Stack.Screen name={"Signup"} component={Signup}/>
+                <Stack.Screen name={"Home"} component={Home}/>
                 <Stack.Screen name={"TrafficCamera"} component={TrafficCamera}/>
                 <Stack.Screen name={"Permissions"} component={Permissions}/>
                 <Stack.Screen name={"PrivacyAndData"} component={PrivacyAndData}/>

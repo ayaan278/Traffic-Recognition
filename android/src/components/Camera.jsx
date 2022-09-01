@@ -3,7 +3,9 @@ import { useState } from 'react';
 import { Button, StyleSheet, Text, TouchableOpacity, View } from 'react-native';
 import BottomBar from "./BottomBar";
 import style1 from '../theme/Styles'
-export default function TrafficCamera() {
+import {Appbar} from "react-native-paper";
+
+export default function TrafficCamera({navigation}) {
     const [type, setType] = useState(CameraType.back);
     const [permission, requestPermission] = Camera.useCameraPermissions();
 
@@ -31,18 +33,25 @@ export default function TrafficCamera() {
         ));
     }
     function startModel(){
-
+    //    modelarts function starts here
     }
 
     return (
         <View style={styles.container}>
             <Camera style={styles.camera} type={type} onCameraReady={startModel}>
                 <View style={styles.buttonContainer}>
-                    <TouchableOpacity
-                        style={styles.button}
-                        onPress={toggleCameraType}>
-                        <Text style={styles.text}>Flip Camera</Text>
-                    </TouchableOpacity>
+                    <Appbar.Header style={style1.header} mode={'small'}>
+                        <Appbar.BackAction
+                            onPress={() => { navigation.navigate('Navmenu');}}
+                            title="Go Back"
+                            icon={'arrow-left'}/>
+                        <Appbar.Content title="Camera"/>
+                        <Appbar.Action
+                            title={"Flip Camera"}
+                            icon={'camera'}
+                            onPress={toggleCameraType}
+                            />
+                    </Appbar.Header>
                     <BottomBar/>
                 </View>
             </Camera>
@@ -59,14 +68,11 @@ const styles = StyleSheet.create({
         flex: 1,
     },
     buttonContainer: {
-        flex: 1,
-        flexDirection: 'row',
-        backgroundColor: 'transparent',
-    },
-    button: {
-        flex: 1,
-        alignSelf: 'flex-end',
-        alignItems: 'center',
+        // flex: 1,
+        // flexDirection: 'row',
+        // backgroundColor: 'transparent',
+        width: '100%',
+        height: '100%',
     },
     text: {
         fontSize: 24,

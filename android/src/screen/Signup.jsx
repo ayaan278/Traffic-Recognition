@@ -12,6 +12,8 @@ export default function RegisterScreen({ navigation }) {
     const [email, setEmail] = useState('')
     const [password, setPassword] = useState('')
     const [confirmPassword, setConfirmPassword] = useState('')
+    const [showErrorMessage, setShowErrorMessage] = useState(true);
+    const [showLengthErrorMessage, setShowLengthErrorMessage] = useState(true);
 
     useEffect(() => {
         const unsubscribe = auth.onAuthStateChanged(user => {
@@ -19,21 +21,32 @@ export default function RegisterScreen({ navigation }) {
                 navigation.navigate('Home');
             }
         })
-
         return unsubscribe
     },[])
-
+    useEffect(() =>{
+        if(password.length>=6){
+            setShowLengthErrorMessage(false);
+        } else{
+            setShowLengthErrorMessage(true);
+        }
+        if(password === confirmPassword && password.length>=6){
+            setShowErrorMessage(false);
+        } else{
+            setShowErrorMessage(true);
+        }
+    })
     const onSignUpPressed = () => {
-        auth.createUserWithEmailAndPassword(email,password)
-            .then(userCredentials => {
-                const user = userCredentials.user;
-                console.log(user.email);
-
-            })
-            .catch(error => alert(error.message));
+        if(password === confirmPassword && name!==""){
+            auth.createUserWithEmailAndPassword(email,password)
+                .then((res) =>{
+                        const userInfo ={
+                            displayName: name,
+                        };
+                    res.user.updateProfile(userInfo)
+                    })
+                .catch(error => alert(error.message));
+        }
     }
-
-
 
     return (
         <KeyboardAvoidingView style={styles.view}>
@@ -76,6 +89,10 @@ export default function RegisterScreen({ navigation }) {
                 onChangeText={(text) => setConfirmPassword(text)}
                 secureTextEntry
             />
+            {showErrorMessage ? <HelperText type="error" >The password doesn't match</HelperText>
+                                : <HelperText>The password matching</HelperText>}
+            {showLengthErrorMessage ? <HelperText type="error" >The password should be greater than 6</HelperText>
+                : <HelperText>The password length is correct</HelperText>}
             <Button
                 mode="contained"
                 onPress={onSignUpPressed}
