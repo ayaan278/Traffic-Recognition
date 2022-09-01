@@ -18,8 +18,6 @@ export default function Home({ navigation }) {
                     icon={MORE_ICON}/>
             </Appbar.Header>
 
-            <Button style={styles.button} mode="contained" onPress={() => navigation.navigate('Login')}>Login</Button>
-            <Button style={styles.button} mode="contained" onPress={() => navigation.navigate('Signup')}>Signup</Button>
             <Button style={styles.button} mode="contained" onPress={() => navigation.navigate('TrafficCamera')}>Camera</Button>
         </View>
     );

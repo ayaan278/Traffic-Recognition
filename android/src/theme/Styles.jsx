@@ -21,6 +21,15 @@ export default StyleSheet.create({
         backgroundColor: Colors.colors.thirdly,
         right: 0,
     },
+    draw_text:{
+        position: 'absolute',
+        top: 100,
+        color: Colors.colors.primary,
+        left: 15,
+        fontSize: 20,
+        fontWeight: '600',
+        wrap: true,
+    },
     view:{
         borderTopLeftRadius: 20,
         borderTopRightRadius: 20,

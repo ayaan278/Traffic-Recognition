@@ -1,31 +1,37 @@
-import React, { useState } from 'react'
-import {TouchableOpacity, View, TextInput} from 'react-native'
+import React, { useState, useEffect } from 'react'
+import {KeyboardAvoidingView, TouchableOpacity, View, TextInput} from 'react-native'
 import {Text, Button, HelperText} from 'react-native-paper'
 import styles from '../theme/Styles';
 // import { emailValidator } from '../helpers/emailValidator'
 // import { passwordValidator } from '../helpers/passwordValidator'
+import { auth } from '../../../firebase'
+import {FacingModeToCameraType as userCredentials} from "expo-camera/src/WebConstants";
 
 export default function Login({ navigation }) {
-    const [email, setEmail] = useState({ value: '', error: '' })
-    const [password, setPassword] = useState({ value: '', error: '' })
+    const [email, setEmail] = useState('')
+    const [password, setPassword] = useState('')
 
+    useEffect(() => {
+        const unsubscribe = auth.onAuthStateChanged(user => {
+            if(user){
+                navigation.navigate('Home');
+            }
+        })
+
+        return unsubscribe
+    },[])
     const onLoginPressed = () => {
-        // const emailError = emailValidator(email.value)
-        // const passwordError = passwordValidator(password.value)
-        // if (emailError || passwordError) {
-        //     setEmail({ ...email, error: emailError })
-        //     setPassword({ ...password, error: passwordError })
-        //     return
-        // }
-    //     navigation.reset({
-    //         index: 0,
-    //         routes: [{ name: 'Dashboard' }],
-    //     })
+        auth.signInWithEmailAndPassword(email,password)
+            .then(userCredentials => {
+                const user = userCredentials.user;
+                console.log(user.email);
+            })
+            .catch(error => alert(error.message));
     }
 
 
     return (
-        <View style={styles.view}>
+        <KeyboardAvoidingView style={styles.view} behavior={"padding"}>
             {/*<Logo />*/}
             {/*<Header>Welcome back.</Header>*/}
             <TextInput
@@ -33,10 +39,8 @@ export default function Login({ navigation }) {
                 returnKeyType="next"
                 style={styles.input}
                 placeholder="Email"
-                value={email.value}
-                onChangeText={(text) => setEmail({ value: text, error: '' })}
-                error={!!email.error}
-                errorText={email.error}
+                value={email}
+                onChangeText={(text) => setEmail(text)}
                 autoCapitalize="none"
                 autoCompleteType="email"
                 textContentType="emailAddress"
@@ -47,10 +51,8 @@ export default function Login({ navigation }) {
                 placeholder="Password"
                 returnKeyType="done"
                 style={styles.input}
-                value={password.value}
-                onChangeText={(text) => setPassword({ value: text, error: '' })}
-                error={!!password.error}
-                errorText={password.error}
+                value={password}
+                onChangeText={(text) => setPassword(text)}
                 secureTextEntry
             />
             <View style={styles.forgotPassword}>
@@ -72,6 +74,6 @@ export default function Login({ navigation }) {
                     <Text style={styles.link}>Sign up</Text>
                 </TouchableOpacity>
             </View>
-        </View>
+        </KeyboardAvoidingView>
     )
 }

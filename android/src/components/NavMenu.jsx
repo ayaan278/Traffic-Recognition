@@ -3,10 +3,21 @@ import { Button, DrawerLayoutAndroid, Text, StyleSheet, View } from "react-nativ
 import { Drawer, Divider, IconButton } from 'react-native-paper';
 import styles from '../theme/Styles'
 import {Colors} from '../theme/Colors'
+import { auth } from '../../../firebase'
 
 const NavMenu = ({navigation}) => {
+
+    const handleSignOut = () => {
+        auth
+            .signOut()
+            .then(() => {
+                navigation.navigate('Login')
+            })
+            .catch(error =>alert(error.message))
+    }
         return(
             <View style={styles.draw_view}>
+                <Text style={styles.draw_text}>{auth.currentUser?.email}</Text>
                 <Drawer.Section style={styles.draw_section}>
                     <Drawer.Item
                         style={styles.drawer_item}
@@ -40,6 +51,7 @@ const NavMenu = ({navigation}) => {
                         style={styles.drawer_item}
                         icon="logout"
                         label="Logout"
+                        onPress={handleSignOut}
                     />
                 </Drawer.Section>
                 <Drawer.Section style={styles.draw_section_opposite}>
