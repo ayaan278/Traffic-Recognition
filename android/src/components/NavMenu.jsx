@@ -29,7 +29,7 @@ const NavMenu = ({navigation}) => {
                     <Drawer.Item
                         style={styles.drawer_item}
                         icon="account"
-                        label="Account Setting"
+                        label="My Account"
                         onPress={() => navigation.navigate('AccountSettings')}
                     />
                         <Divider />

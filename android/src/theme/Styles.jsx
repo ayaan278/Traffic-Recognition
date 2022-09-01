@@ -2,6 +2,42 @@ import {StyleSheet} from "react-native";
 import {Colors} from './Colors'
 
 export default StyleSheet.create({
+    //--------------------General Styling------------------------------
+    view:{
+        borderTopLeftRadius: 20,
+        borderTopRightRadius: 20,
+        height: '100%',
+        marginTop: 120,
+        paddingTop: 25,
+        paddingBottom: 20,
+        paddingRight: 10,
+        paddingLeft: 10,
+        backgroundColor: 'white',
+    },
+    text: {
+        backgroundColor: Colors.colors.primary,
+        borderWidth: 1,
+        padding: 10,
+        borderRadius: 10,
+        fontSize: 18,
+        fontWeight: '450',
+
+    },
+    button: {
+        margin: 15,
+        backgroundColor: Colors.colors.secondary,
+    },
+    //-----------------------------------------------------------------
+    //--------------------Home Styles----------------------------------
+    home_view:{
+        height: '100%',
+        paddingTop: 25,
+        paddingBottom: 20,
+        paddingRight: 10,
+        paddingLeft: 10,
+    },
+    //-----------------------------------------------------------------
+    //--------------------NavMenu Styles-------------------------------
     draw_view:{
         height: '100%',
         width: '100%',
@@ -21,6 +57,10 @@ export default StyleSheet.create({
         backgroundColor: Colors.colors.thirdly,
         right: 0,
     },
+    drawer_item: {
+        padding: 10,
+        margin: 20,
+    },
     draw_text:{
         position: 'absolute',
         top: 100,
@@ -30,26 +70,19 @@ export default StyleSheet.create({
         fontWeight: '600',
         wrap: true,
     },
-    view:{
-        borderTopLeftRadius: 20,
-        borderTopRightRadius: 20,
-        height: '100%',
-        marginTop: 120,
-        paddingTop: 25,
-        paddingBottom: 20,
-        paddingRight: 10,
-        paddingLeft: 10,
-        backgroundColor: 'white',
+    icon_button_opposite: {
+        flex: 1,
+        alignSelf: 'center',
+        justifyContent: 'center',
     },
+    //-------------------------------------------------------------------
+    //-----------------------Header Styles-------------------------------
     header:{
         width: '100%',
+        backgroundColor: Colors.colors.primary,
     },
-    forgotPassword: {
-        width: '100%',
-        alignItems: 'flex-end',
-        marginBottom: 14,
-        marginRight: 6,
-    },
+    //----------------------------------------------------------------------
+    //---------------------Login&SignUp Styles------------------------------
     row: {
         justifyContent: 'center',
         flexDirection: 'row',
@@ -63,10 +96,6 @@ export default StyleSheet.create({
         borderRadius: 10,
         backgroundColor: Colors.colors.primary,
     },
-    button: {
-        margin: 15,
-        backgroundColor: Colors.colors.secondary,
-    },
     forgot: {
         fontSize: 15,
         color: Colors.colors.secondary,
@@ -75,18 +104,7 @@ export default StyleSheet.create({
         fontWeight: 'bold',
         color: Colors.colors.secondary,
     },
-    drawer_item: {
-        padding: 10,
-        margin: 20,
-    },
-    drawer_item_hover: {
-        backgroundColor: Colors.colors.secondary,
-    },
-    icon_button_opposite: {
-        flex: 1,
-        alignSelf: 'center',
-        justifyContent: 'center',
-    },
+    //--------------------Permission Styles-------------------------------
     permissions_view:{
         padding: 20,
         marginVertical: 10,
@@ -101,5 +119,13 @@ export default StyleSheet.create({
         width: '20%',
         position: 'absolute',
         right: 5,
-    }
+    },
+    //----------------------------------------------------------------------
+    //-----------------------Account Setting Styles-------------------------
+    account_view: {
+        padding: 10,
+        marginTop: 20,
+        width: '100%',
+    },
+    //----------------------------------------------------------------------
 })

@@ -21,7 +21,18 @@ export default function PrivacyAndData({ navigation }) {
                     icon={MORE_ICON}/>
             </Appbar.Header>
             <View>
-                <Text>All the permissions come here</Text>
+                <Text>Your privacy is important to us.
+                    To better protect your privacy we provide this notice explaining our online information practices
+                    and the choices you can make about the way your information is collected and used.</Text>
+            </View>
+            <View>
+                <Text>We may collect the following information:</Text>
+            </View>
+            <View>
+                <Text>What we do with the information we gather :</Text>
+            </View>
+            <View>
+                <Text>What we don't collect or monitor :</Text>
             </View>
         </View>
     );

@@ -1,16 +1,15 @@
 import {View, Text, Platform} from "react-native";
 import React from "react";
 import {Appbar, Button} from 'react-native-paper';
-import SpeechButton from "../components/SpeechButton";
+import {Colors} from '../theme/Colors'
 import styles from "../theme/Styles"
 
 const MORE_ICON = Platform.OS === 'ios' ? 'dots-horizontal' : 'menu';
 
 export default function Home({ navigation }) {
     return (
-        <View
-        >
-            <Appbar.Header style={styles.header} mode={'small'}>
+        <View>
+            <Appbar.Header style={styles.header}  mode={'small'} color={Colors.colors.primary}>
                 <Appbar.Content title="Home"/>
                 <Appbar.Action
                     title="Open drawer"
@@ -18,7 +17,11 @@ export default function Home({ navigation }) {
                     icon={MORE_ICON}/>
             </Appbar.Header>
 
-            <Button style={styles.button} mode="contained" onPress={() => navigation.navigate('TrafficCamera')}>Camera</Button>
+            <View style={styles.home_view}>
+
+                <Button style={styles.button} mode="contained" onPress={() => navigation.navigate('TrafficCamera')}>Start Driving</Button>
+
+            </View>
         </View>
     );
 }
