@@ -42,7 +42,7 @@ export default function TrafficCamera({navigation}) {
                 <View style={styles.buttonContainer}>
                     <Appbar.Header style={style1.header} mode={'small'}>
                         <Appbar.BackAction
-                            onPress={() => { navigation.navigate('Navmenu');}}
+                            onPress={() => { navigation.navigate('Home');}}
                             title="Go Back"
                             icon={'arrow-left'}/>
                         <Appbar.Content title="Camera"/>
@@ -68,9 +68,7 @@ const styles = StyleSheet.create({
         flex: 1,
     },
     buttonContainer: {
-        // flex: 1,
-        // flexDirection: 'row',
-        // backgroundColor: 'transparent',
+        backgroundColor: 'transparent',
         width: '100%',
         height: '100%',
     },

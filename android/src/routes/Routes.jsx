@@ -11,6 +11,7 @@ import Permissions from '../screen/Permissions'
 import PrivacyAndData from '../screen/PrivacyAndData'
 import AccountSettings from '../screen/AccountSettings'
 import NavMenu from "../components/NavMenu";
+import horizontalAnimation from '../animation/animation'
 
 const Stack = createNativeStackNavigator();
 
@@ -29,7 +30,7 @@ const Routes = () => {
                 <Stack.Screen name={"Permissions"} component={Permissions}/>
                 <Stack.Screen name={"PrivacyAndData"} component={PrivacyAndData}/>
                 <Stack.Screen name={"AccountSettings"} component={AccountSettings}/>
-                <Stack.Screen name={"Navmenu"} component={NavMenu}/>
+                <Stack.Screen name={"Navmenu"} component={NavMenu} screenOptions={horizontalAnimation}/>
             </Stack.Navigator>
     );
 };

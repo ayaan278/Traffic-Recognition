@@ -5,13 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a00a3f1f-a9de-486b-8e93-1c164e92b38e" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/android/src/animation/animation.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/Lottie/Privacy.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/src/components/NavMenu.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/android/src/components/NavMenu.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/src/components/Camera.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/android/src/components/Camera.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/android/src/components/SpeechButton.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/android/src/components/SpeechButton.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/src/routes/Routes.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/android/src/routes/Routes.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/android/src/screen/AccountSettings.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/android/src/screen/AccountSettings.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/src/screen/Home.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/android/src/screen/Home.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/src/screen/Login.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/android/src/screen/Login.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/android/src/screen/PrivacyAndData.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/android/src/screen/PrivacyAndData.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/src/screen/Signup.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/android/src/screen/Signup.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/android/src/theme/Styles.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/android/src/theme/Styles.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,16 +38,17 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;yarn&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;project.propVCSSupport.DirectoryMappings&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "WebServerToolWindowFactoryState": "false",
+    "node.js.detected.package.eslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "nodejs_package_manager_path": "yarn",
+    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings",
+    "ts.external.directory.path": "C:\\Program Files\\JetBrains\\WebStorm 2022.2.1\\plugins\\JavaScriptLanguage\\jsLanguageServicesImpl\\external",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Windows.old\Users\ayaan\Traffic-Recognition\android\src\components\elements" />
@@ -100,6 +107,7 @@
       <workItem from="1661934803966" duration="4050000" />
       <workItem from="1662008020123" duration="7822000" />
       <workItem from="1662018012880" duration="11824000" />
+      <workItem from="1662087309165" duration="6195000" />
     </task>
     <servers />
   </component>

@@ -1,5 +1,5 @@
 import React, {useEffect, useState} from 'react'
-import {View, StyleSheet, TouchableOpacity, TextInput, KeyboardAvoidingView} from 'react-native'
+import {View, StyleSheet, TouchableOpacity, TextInput, KeyboardAvoidingView, TouchableWithoutFeedback} from 'react-native'
 import {Text, Button, HelperText} from 'react-native-paper'
 import styles from "../theme/Styles";
 import {auth} from "../../../firebase";
@@ -36,7 +36,7 @@ export default function RegisterScreen({ navigation }) {
         }
     })
     const onSignUpPressed = () => {
-        if(password === confirmPassword && name!==""){
+        if(password === confirmPassword && name!=="" && password.length>=6){
             auth.createUserWithEmailAndPassword(email,password)
                 .then((res) =>{
                         const userInfo ={
@@ -50,62 +50,66 @@ export default function RegisterScreen({ navigation }) {
 
     return (
         <KeyboardAvoidingView style={styles.view}>
-            <TextInput
-                label="Name"
-                returnKeyType="next"
-                style={styles.input}
-                placeholder="Name"
-                value={name}
-                onChangeText={(text) => setName(text)}
-            />
-            <TextInput
-                label="Email"
-                returnKeyType="next"
-                style={styles.input}
-                placeholder="Email"
-                value={email}
-                onChangeText={(text) => setEmail(text)}
-                autoCapitalize="none"
-                autoCompleteType="email"
-                textContentType="emailAddress"
-                keyboardType="email-address"
-            />
+            <TouchableWithoutFeedback >
+                <View>
+                    <TextInput
+                        label="Name"
+                        returnKeyType="next"
+                        style={styles.input}
+                        placeholder="Name"
+                        value={name}
+                        onChangeText={(text) => setName(text)}
+                    />
+                    <TextInput
+                        label="Email"
+                        returnKeyType="next"
+                        style={styles.input}
+                        placeholder="Email"
+                        value={email}
+                        onChangeText={(text) => setEmail(text)}
+                        autoCapitalize="none"
+                        autoCompleteType="email"
+                        textContentType="emailAddress"
+                        keyboardType="email-address"
+                    />
 
-            <TextInput
-                label="Password"
-                returnKeyType="done"
-                style={styles.input}
-                placeholder="Password"
-                value={password}
-                onChangeText={(text) => setPassword(text)}
-                secureTextEntry
-            />
-            <TextInput
-                label="Confirm Password"
-                returnKeyType="done"
-                style={styles.input}
-                placeholder="Confirm Password"
-                value={confirmPassword}
-                onChangeText={(text) => setConfirmPassword(text)}
-                secureTextEntry
-            />
-            {showErrorMessage ? <HelperText type="error" >The password doesn't match</HelperText>
-                                : <HelperText>The password matching</HelperText>}
-            {showLengthErrorMessage ? <HelperText type="error" >The password should be greater than 6</HelperText>
-                : <HelperText>The password length is correct</HelperText>}
-            <Button
-                mode="contained"
-                onPress={onSignUpPressed}
-                style={styles.button}
-            >
-                Sign Up
-            </Button>
-            <View style={styles.row}>
-                <Text>Already have an account? </Text>
-                <TouchableOpacity onPress={() => navigation.navigate('Login')}>
-                    <Text style={styles.link}>Login</Text>
-                </TouchableOpacity>
-            </View>
+                    <TextInput
+                        label="Password"
+                        returnKeyType="done"
+                        style={styles.input}
+                        placeholder="Password"
+                        value={password}
+                        onChangeText={(text) => setPassword(text)}
+                        secureTextEntry
+                    />
+                    <TextInput
+                        label="Confirm Password"
+                        returnKeyType="done"
+                        style={styles.input}
+                        placeholder="Confirm Password"
+                        value={confirmPassword}
+                        onChangeText={(text) => setConfirmPassword(text)}
+                        secureTextEntry
+                    />
+                    {showErrorMessage ? <HelperText type="error" >The password doesn't match</HelperText>
+                                        : <HelperText>The password matching</HelperText>}
+                    {showLengthErrorMessage ? <HelperText type="error" >The password should be greater than 6</HelperText>
+                        : <HelperText>The password length is correct</HelperText>}
+                    <Button
+                        mode="contained"
+                        onPress={onSignUpPressed}
+                        style={styles.button}
+                    >
+                        Sign Up
+                    </Button>
+                    <View style={styles.row}>
+                        <Text>Already have an account? </Text>
+                        <TouchableOpacity onPress={() => navigation.navigate('Login')}>
+                            <Text style={styles.link}>Login</Text>
+                        </TouchableOpacity>
+                    </View>
+                </View>
+            </TouchableWithoutFeedback >
         </KeyboardAvoidingView>
     )
 }

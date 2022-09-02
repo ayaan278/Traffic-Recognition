@@ -17,7 +17,7 @@ export default StyleSheet.create({
     text: {
         backgroundColor: Colors.colors.primary,
         borderWidth: 1,
-        padding: 10,
+        padding: 15,
         borderRadius: 10,
         fontSize: 18,
         fontWeight: '450',
@@ -123,7 +123,15 @@ export default StyleSheet.create({
     //----------------------------------------------------------------------
     //-----------------------Account Setting Styles-------------------------
     account_view: {
-        padding: 10,
+        paddingHorizontal: 20,
+        paddingVertical: 10,
+        marginTop: 20,
+        width: '100%',
+    },
+    //----------------------------------------------------------------------
+    privacy_view: {
+        paddingHorizontal: 20,
+        paddingVertical: 10,
         marginTop: 20,
         width: '100%',
     },
