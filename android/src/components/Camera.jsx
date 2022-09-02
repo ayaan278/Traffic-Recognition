@@ -38,7 +38,10 @@ export default function TrafficCamera({navigation}) {
 
     return (
         <View style={styles.container}>
-            <Camera style={styles.camera} type={type} onCameraReady={startModel}>
+            <Camera style={styles.camera}
+                    type={type}
+                    onCameraReady={startModel}
+                    ratio={'16:9'}>
                 <View style={styles.buttonContainer}>
                     <Appbar.Header style={style1.header} mode={'small'}>
                         <Appbar.BackAction

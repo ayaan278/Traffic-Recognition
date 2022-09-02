@@ -30,7 +30,7 @@ const Routes = () => {
                 <Stack.Screen name={"Permissions"} component={Permissions}/>
                 <Stack.Screen name={"PrivacyAndData"} component={PrivacyAndData}/>
                 <Stack.Screen name={"AccountSettings"} component={AccountSettings}/>
-                <Stack.Screen name={"Navmenu"} component={NavMenu} screenOptions={horizontalAnimation}/>
+                <Stack.Screen name={"Navmenu"} component={NavMenu} />
             </Stack.Navigator>
     );
 };
