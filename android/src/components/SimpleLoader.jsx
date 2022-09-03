@@ -1,6 +1,7 @@
 import React, {useEffect, useRef} from "react";
-import { StyleSheet, View, Text } from "react-native";
+import { View, Text } from "react-native";
 import LottieView from "lottie-react-native";
+import styles from "../theme/Styles"
 
 export default function SimpleLoader(){
     const animation = useRef(null);
@@ -9,15 +10,13 @@ export default function SimpleLoader(){
         // animation.current?.play();
     }, []);
     return(
-        <View>
+        <View style={styles.loader_view}>
             <LottieView
                 autoPlay
                 ref={animation}
                 style={{
                     width: 70,
                     height: 70,
-                    alignSelf: 'center',
-                    backgroundColor: '#eee',
                 }}
                 // Find more Lottie files at https://lottiefiles.com/featured
                 source={require('../../../assets/Lottie/Loader.json')}

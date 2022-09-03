@@ -5,25 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a00a3f1f-a9de-486b-8e93-1c164e92b38e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/android/src/components/SimpleLoader.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/Lottie/Loader.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/android/src/screen/ResetPassword.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/src/animation/animation.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/src/components/BottomBar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/android/src/components/BottomBar.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/src/components/SpeechButton.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/android/src/components/SpeechButton.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/src/components/SimpleLoader.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/android/src/components/SimpleLoader.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/android/src/routes/Routes.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/android/src/routes/Routes.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/src/screen/AccountSettings.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/android/src/screen/AccountSettings.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/src/screen/Home.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/android/src/screen/Home.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/android/src/screen/Login.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/android/src/screen/Login.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/src/screen/Permissions.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/android/src/screen/Permissions.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/src/screen/PrivacyAndData.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/android/src/screen/PrivacyAndData.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/android/src/screen/Signup.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/android/src/screen/Signup.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/src/theme/Colors.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/android/src/theme/Colors.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/android/src/theme/Styles.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/android/src/theme/Styles.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/codes.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -115,7 +103,8 @@
       <workItem from="1662018012880" duration="11824000" />
       <workItem from="1662087309165" duration="6195000" />
       <workItem from="1662121542931" duration="1559000" />
-      <workItem from="1662173746988" duration="9348000" />
+      <workItem from="1662173746988" duration="9598000" />
+      <workItem from="1662183810245" duration="3749000" />
     </task>
     <servers />
   </component>

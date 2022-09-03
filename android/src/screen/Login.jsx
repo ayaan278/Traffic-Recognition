@@ -3,8 +3,6 @@ import {KeyboardAvoidingView, TouchableWithoutFeedback, TouchableOpacity, View} 
 import {Text, Button, HelperText, TextInput} from 'react-native-paper'
 import styles from '../theme/Styles';
 import {Colors} from '../theme/Colors'
-// import { emailValidator } from '../helpers/emailValidator'
-// import { passwordValidator } from '../helpers/passwordValidator'
 import { auth } from '../../../firebase'
 import {FacingModeToCameraType as userCredentials} from "expo-camera/src/WebConstants";
 import SimpleLoader from "../components/SimpleLoader";
@@ -72,7 +70,7 @@ export default function Login({ navigation }) {
                     />
                     <View style={styles.forgotPassword}>
                         <TouchableOpacity
-                            // onPress={() => navigation.navigate('ResetPasswordScreen')}
+                            onPress={() => navigation.navigate('ResetPassword')}
                         >
                             <Text >Forgot your password?</Text>
                         </TouchableOpacity>

@@ -4,9 +4,7 @@ import {Text, Button, HelperText, TextInput} from 'react-native-paper'
 import styles from "../theme/Styles";
 import {auth} from "../../../firebase";
 import {Colors} from "../theme/Colors";
-// import { emailValidator } from '../helpers/emailValidator'
-// import { passwordValidator } from '../helpers/passwordValidator'
-// import { nameValidator } from '../helpers/nameValidator'
+
 
 export default function RegisterScreen({ navigation }) {
     const [name, setName] = useState('')

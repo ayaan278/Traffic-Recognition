@@ -15,21 +15,25 @@ export default StyleSheet.create({
         backgroundColor: 'white',
     },
     text: {
-        backgroundColor: Colors.colors.primary,
         borderWidth: 1,
         padding: 15,
         borderRadius: 10,
         fontSize: 18,
         fontWeight: '450',
-
     },
     button: {
         margin: 15,
         backgroundColor: Colors.colors.secondary,
     },
     //-----------------------------------------------------------------
+    loader_view: {
+        flex:1,
+        flexDirection:'row',
+        alignItems:'center',
+        justifyContent:'center'
+    },
     //--------------------Home Styles----------------------------------
-    home_view:{
+    home_view: {
         height: '100%',
         paddingTop: 25,
         paddingBottom: 20,
@@ -135,4 +139,12 @@ export default StyleSheet.create({
         width: '100%',
     },
     //----------------------------------------------------------------------
+    dialog_view:{
+        backgroundColor: Colors.colors.secondary,
+    },
+    dialog_text: {
+        color: 'white',
+        fontSize: 18,
+        fontWeight: '450',
+    }
 })

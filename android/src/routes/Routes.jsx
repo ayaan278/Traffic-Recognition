@@ -11,6 +11,7 @@ import Permissions from '../screen/Permissions'
 import PrivacyAndData from '../screen/PrivacyAndData'
 import AccountSettings from '../screen/AccountSettings'
 import NavMenu from "../components/NavMenu";
+import ResetPassword from "../screen/ResetPassword"
 
 const Stack = createNativeStackNavigator();
 
@@ -24,6 +25,7 @@ const Routes = () => {
                 }}>
                     <Stack.Screen name={"Login"} component={Login}/>
                     <Stack.Screen name={"Signup"} component={Signup}/>
+                    <Stack.Screen name={"ResetPassword"} component={ResetPassword}/>
                     <Stack.Screen name={"Home"} component={Home}/>
                     <Stack.Screen name={"TrafficCamera"} component={TrafficCamera}/>
                     <Stack.Screen name={"Permissions"} component={Permissions}/>
