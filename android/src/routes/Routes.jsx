@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React, { useRef, useState, useEffect } from "react";
 import { Button, DrawerLayoutAndroid, Text, StyleSheet, View } from "react-native";
 import { Appbar } from 'react-native-paper';
 import { Platform } from 'react-native';
@@ -11,7 +11,6 @@ import Permissions from '../screen/Permissions'
 import PrivacyAndData from '../screen/PrivacyAndData'
 import AccountSettings from '../screen/AccountSettings'
 import NavMenu from "../components/NavMenu";
-import horizontalAnimation from '../animation/animation'
 
 const Stack = createNativeStackNavigator();
 
@@ -21,18 +20,18 @@ const Routes = () => {
 
     return (
             <Stack.Navigator screenOptions={{
-                headerShown: false
-            }}>
-                <Stack.Screen name={"Login"} component={Login}/>
-                <Stack.Screen name={"Signup"} component={Signup}/>
-                <Stack.Screen name={"Home"} component={Home}/>
-                <Stack.Screen name={"TrafficCamera"} component={TrafficCamera}/>
-                <Stack.Screen name={"Permissions"} component={Permissions}/>
-                <Stack.Screen name={"PrivacyAndData"} component={PrivacyAndData}/>
-                <Stack.Screen name={"AccountSettings"} component={AccountSettings}/>
-                <Stack.Screen name={"Navmenu"} component={NavMenu} />
+                    headerShown: false
+                }}>
+                    <Stack.Screen name={"Login"} component={Login}/>
+                    <Stack.Screen name={"Signup"} component={Signup}/>
+                    <Stack.Screen name={"Home"} component={Home}/>
+                    <Stack.Screen name={"TrafficCamera"} component={TrafficCamera}/>
+                    <Stack.Screen name={"Permissions"} component={Permissions}/>
+                    <Stack.Screen name={"PrivacyAndData"} component={PrivacyAndData}/>
+                    <Stack.Screen name={"AccountSettings"} component={AccountSettings}/>
+                    <Stack.Screen name={"Navmenu"} component={NavMenu} />
             </Stack.Navigator>
-    );
+   );
 };
 
 export default Routes;

@@ -1,20 +1,29 @@
 import React, { useState, useEffect } from 'react'
-import {KeyboardAvoidingView, TouchableWithoutFeedback, TouchableOpacity, View, TextInput} from 'react-native'
-import {Text, Button, HelperText} from 'react-native-paper'
+import {KeyboardAvoidingView, TouchableWithoutFeedback, TouchableOpacity, View} from 'react-native'
+import {Text, Button, HelperText, TextInput} from 'react-native-paper'
 import styles from '../theme/Styles';
+import {Colors} from '../theme/Colors'
 // import { emailValidator } from '../helpers/emailValidator'
 // import { passwordValidator } from '../helpers/passwordValidator'
 import { auth } from '../../../firebase'
 import {FacingModeToCameraType as userCredentials} from "expo-camera/src/WebConstants";
+import SimpleLoader from "../components/SimpleLoader";
 
 export default function Login({ navigation }) {
     const [email, setEmail] = useState('')
     const [password, setPassword] = useState('')
 
+
     useEffect(() => {
         const unsubscribe = auth.onAuthStateChanged(user => {
             if(user){
                 navigation.navigate('Home');
+                setEmail('');
+                setPassword('');
+                navigation.reset({
+                    index: 0,
+                    routes: [{ name: "Home"}],
+                });
             }
         })
 
@@ -38,8 +47,10 @@ export default function Login({ navigation }) {
                 <View>
                     <TextInput
                         label="Email"
+                        mode={'outlined'}
+                        selectionColor={'black'}
+                        activeOutlineColor={Colors.colors.secondary}
                         style={styles.input}
-                        placeholder="Email"
                         value={email}
                         onChangeText={(text) => setEmail(text)}
                         autoCapitalize="none"
@@ -49,9 +60,12 @@ export default function Login({ navigation }) {
                     />
                     <TextInput
                         label="Password"
-                        placeholder="Password"
+                        mode={'outlined'}
                         returnKeyType="done"
+                        selectionColor={'black'}
+                        activeOutlineColor={Colors.colors.secondary}
                         style={styles.input}
+                        color={'white'}
                         value={password}
                         onChangeText={(text) => setPassword(text)}
                         secureTextEntry

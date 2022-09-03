@@ -15,7 +15,7 @@ const BottomBar = () => {
                 styles.bottom,
                 {
                     height: BOTTOM_APPBAR_HEIGHT,
-                    backgroundColor: Colors.colors.primary,
+                    backgroundColor: Colors.colors.secondary,
                 },
             ]}
             safeAreaInsets={{ bottom }}

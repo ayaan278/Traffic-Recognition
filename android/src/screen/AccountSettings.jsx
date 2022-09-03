@@ -1,6 +1,6 @@
-import {View, Text, TextInput, KeyboardAvoidingView, TouchableWithoutFeedback, Platform, Keyboard} from "react-native";
+import {View, Text, KeyboardAvoidingView, TouchableWithoutFeedback, Platform, Keyboard} from "react-native";
 import React,{useState, useEffect} from "react";
-import {Appbar, Button, Divider, HelperText, Dialog, Portal, Paragraph} from 'react-native-paper';
+import {Appbar, Button, Divider, HelperText, Dialog, Portal, Paragraph, TextInput} from 'react-native-paper';
 import styles from "../theme/Styles";
 import {auth} from "../../../firebase"
 import {Colors} from "../theme/Colors";
@@ -56,10 +56,26 @@ export default function AccountSettings({ navigation }) {
             </Appbar.Header>
 
             <View style={styles.account_view}>
-                <Text style={styles.text}>Name : {auth.currentUser?.displayName}</Text>
-            </View>
-            <View style={styles.account_view}>
-                <Text style={styles.text}>Email : {auth.currentUser?.email}</Text>
+                <TextInput
+                    label="Name"
+                    editable={false}
+                    returnKeyType="done"
+                    style={styles.input}
+                    selectionColor={'black'}
+                    activeOutlineColor={Colors.colors.secondary}
+                    mode={'outlined'}
+                    value={auth.currentUser?.displayName}
+                />
+                <TextInput
+                    label="Email"
+                    editable={false}
+                    returnKeyType="done"
+                    style={styles.input}
+                    selectionColor={'black'}
+                    activeOutlineColor={Colors.colors.secondary}
+                    mode={'outlined'}
+                    value={auth.currentUser?.email}
+                />
             </View>
             <Divider />
             { showBlock ?
@@ -70,7 +86,9 @@ export default function AccountSettings({ navigation }) {
                             label="Password"
                             returnKeyType="done"
                             style={styles.input}
-                            placeholder="Password"
+                            selectionColor={'black'}
+                            activeOutlineColor={Colors.colors.secondary}
+                            mode={'outlined'}
                             value={password}
                             onChangeText={(text) => setPassword(text)}
                             secureTextEntry
@@ -79,7 +97,9 @@ export default function AccountSettings({ navigation }) {
                             label="Confirm Password"
                             returnKeyType="done"
                             style={styles.input}
-                            placeholder="Confirm Password"
+                            selectionColor={'black'}
+                            activeOutlineColor={Colors.colors.secondary}
+                            mode={'outlined'}
                             value={confirmPassword}
                             onChangeText={(text) => setConfirmPassword(text)}
                             secureTextEntry

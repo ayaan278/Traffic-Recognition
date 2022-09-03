@@ -2,12 +2,20 @@ import { StyleSheet, Text, View } from 'react-native';
 import { Provider as PaperProvider } from 'react-native-paper';
 import { NavigationContainer } from '@react-navigation/native';
 import Routes from "./android/src/routes/Routes"
+import React, { useState, useEffect } from "react";
+import SimpleLoader from "./android/src/components/SimpleLoader";
 
 export default function App() {
-  return (
+    const [show, setShow] = useState(false);
+
+    useEffect(() => {
+        setTimeout(() => setShow(true), 2000);
+    },[]);
+
+    return (
     <PaperProvider>
       <NavigationContainer >
-        <Routes/>
+          {show ? <Routes/> : <SimpleLoader/>}
       </NavigationContainer>
     </PaperProvider>
   );

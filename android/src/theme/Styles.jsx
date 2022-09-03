@@ -89,12 +89,11 @@ export default StyleSheet.create({
         marginTop: 4,
     },
     input: {
-        height: 50,
-        margin: 12,
-        borderWidth: 1,
-        padding: 10,
-        borderRadius: 10,
-        backgroundColor: Colors.colors.primary,
+        marginHorizontal: 5,
+        marginVertical: 15,
+        // padding: 4,
+        backgroundColor: Colors.colors.thirdly,
+        fontColor: 'white',
     },
     forgot: {
         fontSize: 15,
@@ -123,7 +122,7 @@ export default StyleSheet.create({
     //----------------------------------------------------------------------
     //-----------------------Account Setting Styles-------------------------
     account_view: {
-        paddingHorizontal: 20,
+        paddingHorizontal: 10,
         paddingVertical: 10,
         marginTop: 20,
         width: '100%',

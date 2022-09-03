@@ -1,13 +1,17 @@
 import {View, Text, Platform, ScrollView} from "react-native";
-import React from "react";
+import React, { useRef, useEffect } from "react";
 import {Appbar, Button, Card, Title, Paragraph, List, Divider} from 'react-native-paper';
 import styles from "../theme/Styles";
-import Privacy from '../../../assets/Lottie/Privacy.json'
-import Lottie from 'lottie-react-native';
+import LottieView from 'lottie-react-native';
 
 const MORE_ICON = Platform.OS === 'ios' ? 'dots-horizontal' : 'menu';
 
 export default function PrivacyAndData({ navigation }) {
+    const animation = useRef(null);
+    useEffect(() => {
+        // You can control the ref programmatically, rather than using autoPlay
+        // animation.current?.play();
+    }, []);
     return (
         <ScrollView>
             <Appbar.Header style={styles.header} mode={'small'}>
@@ -16,10 +20,6 @@ export default function PrivacyAndData({ navigation }) {
                     title="Go Back"
                     icon={'arrow-left'}/>
                 <Appbar.Content title="Privacy and Data"/>
-                <Appbar.Action
-                    title="Open drawer"
-                    onPress={() => navigation.navigate('Navmenu')}
-                    icon={MORE_ICON}/>
             </Appbar.Header>
 
             <Card>
@@ -29,12 +29,22 @@ export default function PrivacyAndData({ navigation }) {
                         To better protect your privacy we provide this notice explaining our online information practices
                         and the choices you can make about the way your information is collected and used.</Paragraph>
                 </Card.Content>
-                <Lottie autoplay
-                        source={Privacy}
-                        loop
-                        style={{ width: 150, height: 150 }} />
+                <Card.Content>
+                    <LottieView
+                        autoPlay
+                        ref={animation}
+                        style={{
+                            width: 250,
+                            height: 250,
+                            alignSelf: 'center',
+                            backgroundColor: '#eee',
+                        }}
+                        // Find more Lottie files at https://lottiefiles.com/featured
+                        source={require('../../../assets/Lottie/Privacy.json')}
+                    />
+                </Card.Content>
+
             </Card>
-            <Divider />
             <View style={styles.privacy_view}>
                 <Card>
                     <Card.Content>
@@ -44,11 +54,7 @@ export default function PrivacyAndData({ navigation }) {
                             <List.Item title={"Email-address"}/>
                         </List.Section>
                     </Card.Content>
-                </Card>
-            </View>
-            <Divider />
-            <View style={styles.privacy_view}>
-                <Card>
+                    <Divider />
                     <Card.Content>
                         <Title>What we do with the information we gather :</Title>
                         <List.Section >
@@ -56,11 +62,7 @@ export default function PrivacyAndData({ navigation }) {
                             <List.Item titleNumberOfLines={2} title={"We may sent promotional emails to the users Email-address."}/>
                         </List.Section>
                     </Card.Content>
-                </Card>
-            </View>
-            <Divider />
-            <View style={styles.privacy_view}>
-                <Card>
+                    <Divider/>
                     <Card.Content>
                         <Title>What we don't collect or monitor :</Title>
                         <List.Section>
@@ -70,6 +72,10 @@ export default function PrivacyAndData({ navigation }) {
                         </List.Section>
                     </Card.Content>
                 </Card>
+            </View>
+            <Divider />
+            <View style={styles.privacy_view}>
+
             </View>
         </ScrollView>
     );

@@ -1,8 +1,9 @@
 import React, {useEffect, useState} from 'react'
-import {View, StyleSheet, TouchableOpacity, TextInput, KeyboardAvoidingView, TouchableWithoutFeedback} from 'react-native'
-import {Text, Button, HelperText} from 'react-native-paper'
+import {View, StyleSheet, TouchableOpacity, KeyboardAvoidingView, TouchableWithoutFeedback} from 'react-native'
+import {Text, Button, HelperText, TextInput} from 'react-native-paper'
 import styles from "../theme/Styles";
 import {auth} from "../../../firebase";
+import {Colors} from "../theme/Colors";
 // import { emailValidator } from '../helpers/emailValidator'
 // import { passwordValidator } from '../helpers/passwordValidator'
 // import { nameValidator } from '../helpers/nameValidator'
@@ -19,6 +20,14 @@ export default function RegisterScreen({ navigation }) {
         const unsubscribe = auth.onAuthStateChanged(user => {
             if(user){
                 navigation.navigate('Home');
+                setName('');
+                setEmail('');
+                setPassword('');
+                setConfirmPassword('');
+                navigation.reset({
+                    index: 0,
+                    routes: [{ name: "Home"}],
+                });
             }
         })
         return unsubscribe
@@ -54,17 +63,21 @@ export default function RegisterScreen({ navigation }) {
                 <View>
                     <TextInput
                         label="Name"
+                        mode={'outlined'}
+                        selectionColor={'black'}
+                        activeOutlineColor={Colors.colors.secondary}
                         returnKeyType="next"
                         style={styles.input}
-                        placeholder="Name"
                         value={name}
                         onChangeText={(text) => setName(text)}
                     />
                     <TextInput
                         label="Email"
+                        mode={'outlined'}
+                        selectionColor={'black'}
+                        activeOutlineColor={Colors.colors.secondary}
                         returnKeyType="next"
                         style={styles.input}
-                        placeholder="Email"
                         value={email}
                         onChangeText={(text) => setEmail(text)}
                         autoCapitalize="none"
@@ -75,18 +88,22 @@ export default function RegisterScreen({ navigation }) {
 
                     <TextInput
                         label="Password"
+                        mode={'outlined'}
+                        selectionColor={'black'}
+                        activeOutlineColor={Colors.colors.secondary}
                         returnKeyType="done"
                         style={styles.input}
-                        placeholder="Password"
                         value={password}
                         onChangeText={(text) => setPassword(text)}
                         secureTextEntry
                     />
                     <TextInput
                         label="Confirm Password"
+                        mode={'outlined'}
+                        selectionColor={'black'}
+                        activeOutlineColor={Colors.colors.secondary}
                         returnKeyType="done"
                         style={styles.input}
-                        placeholder="Confirm Password"
                         value={confirmPassword}
                         onChangeText={(text) => setConfirmPassword(text)}
                         secureTextEntry

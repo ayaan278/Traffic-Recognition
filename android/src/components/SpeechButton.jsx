@@ -6,15 +6,19 @@ import * as Speech from 'expo-speech';
 
 const SpeechButton = () => {
     const Speak = () =>{
-        const thingsToSay = 'Go and Stop';
-        Speech.speak(thingsToSay);
+        // if(Speech){
+            const Go = 'Go';
+            const Stop = 'Stop';
+            Speech.speak(Go);
+        // }
+
     }
     return(
         <IconButton
             style={styles.button}
             icon="speaker"
             mode={"contained-tonal"}
-            iconColor={Colors.colors.primary}
+            iconColor={Colors.colors.text}
             containerColor={Colors.colors.thirdly}
             size={50}
             onPress={Speak}
