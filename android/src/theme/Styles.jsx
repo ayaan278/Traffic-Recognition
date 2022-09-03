@@ -95,7 +95,6 @@ export default StyleSheet.create({
     input: {
         marginHorizontal: 5,
         marginVertical: 15,
-        // padding: 4,
         backgroundColor: Colors.colors.thirdly,
         fontColor: 'white',
     },
@@ -107,6 +106,7 @@ export default StyleSheet.create({
         fontWeight: 'bold',
         color: Colors.colors.secondary,
     },
+    //----------------------------------------------------------------------
     //--------------------Permission Styles-------------------------------
     permissions_view:{
         padding: 20,
@@ -132,6 +132,7 @@ export default StyleSheet.create({
         width: '100%',
     },
     //----------------------------------------------------------------------
+    //-----------------------Privacy View Styles----------------------------
     privacy_view: {
         paddingHorizontal: 20,
         paddingVertical: 10,
@@ -139,8 +140,9 @@ export default StyleSheet.create({
         width: '100%',
     },
     //----------------------------------------------------------------------
+    //-----------------------Alert Dialog Styles----------------------------
     dialog_view:{
-        backgroundColor: Colors.colors.secondary,
+        backgroundColor: Colors.colors.thirdly,
     },
     dialog_text: {
         color: 'white',

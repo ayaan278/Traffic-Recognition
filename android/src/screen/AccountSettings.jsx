@@ -123,13 +123,16 @@ export default function AccountSettings({ navigation }) {
                             onPress={showChange}>Edit Password</Button>
                 </View>}
             <Portal>
-                <Dialog visible={visible} onDismiss={hideDialog}>
-                    <Dialog.Title>Alert</Dialog.Title>
+                <Dialog visible={visible} onDismiss={hideDialog} style={styles.dialog_view}>
+                    <Dialog.Title style={styles.dialog_text}>Alert</Dialog.Title>
                     <Dialog.Content>
-                        <Paragraph>Your Password have been changed</Paragraph>
+                        <Paragraph style={styles.dialog_text}>Your Password have been changed</Paragraph>
                     </Dialog.Content>
                     <Dialog.Actions>
-                        <Button onPress={hideDialog}>Okay</Button>
+                        <Button onPress={hideDialog}
+                            buttonColor={Colors.colors.secondary}
+                            mode="contained"
+                        >Okay</Button>
                     </Dialog.Actions>
                 </Dialog>
             </Portal>
