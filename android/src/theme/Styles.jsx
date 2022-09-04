@@ -145,7 +145,7 @@ export default StyleSheet.create({
         backgroundColor: Colors.colors.thirdly,
     },
     dialog_text: {
-        color: 'white',
+        color: 'black',
         fontSize: 18,
         fontWeight: '450',
     }

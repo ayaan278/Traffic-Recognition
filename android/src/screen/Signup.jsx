@@ -1,6 +1,6 @@
 import React, {useEffect, useState} from 'react'
-import {View, StyleSheet, TouchableOpacity, KeyboardAvoidingView, TouchableWithoutFeedback} from 'react-native'
-import {Text, Button, HelperText, TextInput} from 'react-native-paper'
+import {KeyboardAvoidingView, TouchableOpacity, TouchableWithoutFeedback, View} from 'react-native'
+import {Button, HelperText, Text, TextInput} from 'react-native-paper'
 import styles from "../theme/Styles";
 import {auth} from "../../../firebase";
 import {Colors} from "../theme/Colors";
@@ -15,8 +15,8 @@ export default function RegisterScreen({ navigation }) {
     const [showLengthErrorMessage, setShowLengthErrorMessage] = useState(true);
 
     useEffect(() => {
-        const unsubscribe = auth.onAuthStateChanged(user => {
-            if(user){
+        return auth.onAuthStateChanged(user => {
+            if (user) {
                 navigation.navigate('Home');
                 setName('');
                 setEmail('');
@@ -24,11 +24,10 @@ export default function RegisterScreen({ navigation }) {
                 setConfirmPassword('');
                 navigation.reset({
                     index: 0,
-                    routes: [{ name: "Home"}],
+                    routes: [{name: "Home"}],
                 });
             }
         })
-        return unsubscribe
     },[])
     useEffect(() =>{
         if(password.length>=6){

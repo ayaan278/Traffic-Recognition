@@ -1,11 +1,9 @@
-import React, { useState, useEffect } from 'react'
-import {KeyboardAvoidingView, TouchableWithoutFeedback, TouchableOpacity, View} from 'react-native'
-import {Text, Button, HelperText, TextInput} from 'react-native-paper'
+import React, {useEffect, useState} from 'react'
+import {KeyboardAvoidingView, TouchableOpacity, TouchableWithoutFeedback, View} from 'react-native'
+import {Button, Text, TextInput} from 'react-native-paper'
 import styles from '../theme/Styles';
 import {Colors} from '../theme/Colors'
-import { auth } from '../../../firebase'
-import {FacingModeToCameraType as userCredentials} from "expo-camera/src/WebConstants";
-import SimpleLoader from "../components/SimpleLoader";
+import {auth} from '../../../firebase'
 
 export default function Login({ navigation }) {
     const [email, setEmail] = useState('')
@@ -13,19 +11,17 @@ export default function Login({ navigation }) {
 
 
     useEffect(() => {
-        const unsubscribe = auth.onAuthStateChanged(user => {
-            if(user){
+        return auth.onAuthStateChanged(user => {
+            if (user) {
                 navigation.navigate('Home');
                 setEmail('');
                 setPassword('');
                 navigation.reset({
                     index: 0,
-                    routes: [{ name: "Home"}],
+                    routes: [{name: "Home"}],
                 });
             }
         })
-
-        return unsubscribe
     },[])
     const onLoginPressed = () => {
         auth.signInWithEmailAndPassword(email,password)
@@ -40,7 +36,6 @@ export default function Login({ navigation }) {
     return (
         <KeyboardAvoidingView style={styles.view} behavior={"padding"}>
             {/*<Logo />*/}
-            {/*<Header>Welcome back.</Header>*/}
             <TouchableWithoutFeedback >
                 <View>
                     <TextInput

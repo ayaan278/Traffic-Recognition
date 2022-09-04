@@ -9,6 +9,7 @@ import * as Speech from 'expo-speech';
 const MORE_ICON = Platform.OS === 'ios' ? 'dots-horizontal' : 'menu';
 
 export default function Permissions({ navigation }) {
+    const [permission, requestPermission] = Camera.useCameraPermissions();
 
     const [isEnabledCamera, setIsEnabledCamera] = useState(false);
     const toggleSwitchCamera = () => setIsEnabledCamera(previousState => !previousState);
@@ -20,21 +21,24 @@ export default function Permissions({ navigation }) {
     const toggleSwitchVoice = () => setIsEnabledVoice(previousState => !previousState);
 
     useEffect(() => {
-        // if(!isEnabledVoice){
-        //     Speech.stop().then(r => {
-        //         console.log("Disabled speech")
-        //     });
+        if(!isEnabledVoice) {
+            Speech.stop().then(r => {
+                console.log("Disabled speech")
+            });
+        }
         // }else{
         //     Speech.resume().then(r => {
         //         console.log("Enabled Speech")
         //     })
         // }
-        // if(Camera.getCameraPermissionsAsync()===true){
-        //     setIsEnabledCamera(true)
-        // }
-        // if(!isEnabledCamera){
-        //
-        // }
+        if(Camera.getCameraPermissionsAsync()===true){
+            setIsEnabledCamera(true)
+        }
+        if(!isEnabledCamera){
+            requestPermission().then(r =>
+                setIsEnabledCamera(true)
+            );
+        }
     })
 
     return (
