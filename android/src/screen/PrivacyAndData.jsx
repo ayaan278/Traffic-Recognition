@@ -3,6 +3,7 @@ import React, { useRef, useEffect } from "react";
 import {Appbar, Button, Card, Title, Paragraph, List, Divider} from 'react-native-paper';
 import styles from "../theme/Styles";
 import LottieView from 'lottie-react-native';
+import {Colors} from '../theme/Colors'
 
 const MORE_ICON = Platform.OS === 'ios' ? 'dots-horizontal' : 'menu';
 
@@ -55,7 +56,7 @@ export default function PrivacyAndData({ navigation }) {
                         </List.Section>
                     </Card.Content>
                     <Divider />
-                    <Card.Content>
+                    <Card.Content style={{backgroundColor: Colors.colors.thirdly}}>
                         <Title>What we do with the information we gather :</Title>
                         <List.Section >
                             <List.Item titleNumberOfLines={2} title ={"We use Name and Email-address to let user login in our app."}/>

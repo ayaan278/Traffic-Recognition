@@ -9,5 +9,6 @@ export const Colors = {
         secondary: '#30475E',
         thirdly: '#add2ee',
         error: '#FF9F29',
+        chart: '#7d08b7',
     },
 }

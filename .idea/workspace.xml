@@ -5,13 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a00a3f1f-a9de-486b-8e93-1c164e92b38e" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/android/src/components/Chart.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/android/src/screen/Home.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/android/src/screen/Home.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/src/screen/Login.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/android/src/screen/Login.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/android/src/screen/Permissions.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/android/src/screen/Permissions.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/src/screen/Signup.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/android/src/screen/Signup.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/src/theme/Styles.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/android/src/theme/Styles.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.json" beforeDir="false" afterPath="$PROJECT_DIR$/app.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/src/screen/PrivacyAndData.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/android/src/screen/PrivacyAndData.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/src/theme/Colors.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/android/src/theme/Colors.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
@@ -19,6 +18,13 @@
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -109,7 +115,7 @@
       <workItem from="1662183810245" duration="3749000" />
       <workItem from="1662191258584" duration="1247000" />
       <workItem from="1662219149794" duration="1059000" />
-      <workItem from="1662266278970" duration="2659000" />
+      <workItem from="1662266278970" duration="5207000" />
     </task>
     <servers />
   </component>

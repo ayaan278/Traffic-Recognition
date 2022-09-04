@@ -14,9 +14,6 @@ export default function Permissions({ navigation }) {
     const [isEnabledCamera, setIsEnabledCamera] = useState(false);
     const toggleSwitchCamera = () => setIsEnabledCamera(previousState => !previousState);
 
-    const [isEnabledNotifications, setIsEnabledNotifications] = useState(false);
-    const toggleSwitchNotifications = () => setIsEnabledNotifications(previousState => !previousState);
-
     const [isEnabledVoice, setIsEnabledVoice] = useState(true);
     const toggleSwitchVoice = () => setIsEnabledVoice(previousState => !previousState);
 
@@ -33,6 +30,8 @@ export default function Permissions({ navigation }) {
         // }
         if(Camera.getCameraPermissionsAsync()===true){
             setIsEnabledCamera(true)
+        }else{
+            setIsEnabledCamera(false)
         }
         if(!isEnabledCamera){
             requestPermission().then(r =>
@@ -51,17 +50,6 @@ export default function Permissions({ navigation }) {
                 <Appbar.Content title="Permissions"/>
             </Appbar.Header>
 
-            <View style={styles.permissions_view}>
-                <Text style={styles.permissions_text}>Allow Notifications</Text>
-                <Switch style={styles.permissions_switch}
-                    trackColor={{ false: "#767577", true: Colors.colors.secondary }}
-                    thumbColor={isEnabledNotifications ? Colors.colors.thirdly : "#f4f3f4"}
-                    ios_backgroundColor="#3e3e3e"
-                    onValueChange={toggleSwitchNotifications}
-                    value={isEnabledNotifications}
-                />
-            </View>
-            <Divider/>
             <View style={styles.permissions_view}>
                 <Text style={styles.permissions_text}>Allow Camera</Text>
                 <Switch style={styles.permissions_switch}

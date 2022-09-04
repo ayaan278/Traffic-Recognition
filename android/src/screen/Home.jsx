@@ -5,7 +5,7 @@ import {Colors} from '../theme/Colors'
 import styles from "../theme/Styles"
 import SimpleLoader from "../components/SimpleLoader"
 import {auth} from '../../../firebase'
-
+import Charts from "../components/Chart";
 const MORE_ICON = Platform.OS === 'ios' ? 'dots-horizontal' : 'menu';
 
 export default function Home({ navigation }) {
@@ -46,19 +46,17 @@ export default function Home({ navigation }) {
                         <Paragraph>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At consequuntur dignissimos eius facere, fuga harum, laudantium magnam minus molestiae necessitatibus nesciunt nobis perferendis perspiciatis praesentium quae reiciendis rerum soluta suscipit.</Paragraph>
                     </Card.Content>
 
+                    <Card.Content>
+                        <Title>Your weekly performance for following the correct signal</Title>
+                        <Charts/>
+                    </Card.Content>
+
                     <Card.Actions>
                         <Button style={styles.button}
                                 buttonColor={Colors.colors.secondary}
                                 mode="contained"
                                 onPress={showDialog}>Start Driving</Button>
                     </Card.Actions>
-                    <Card.Content>
-                        {/*<LineChart*/}
-                        {/*    data={data}*/}
-                        {/*    width={screenWidth}*/}
-                        {/*    height={220}*/}
-                        {/*/>*/}
-                    </Card.Content>
                 </Card>
             </View>
 
