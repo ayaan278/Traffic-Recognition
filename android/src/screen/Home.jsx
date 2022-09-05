@@ -32,11 +32,11 @@ export default function Home({ navigation }) {
     return (
         <View>
             <Appbar.Header style={styles.header}  mode={'small'} color={Colors.colors.primary}>
-                <Appbar.Content title="Home"/>
                 <Appbar.Action
                     title="Open drawer"
                     onPress={() => navigation.navigate('Navmenu')}
                     icon={MORE_ICON}/>
+                <Appbar.Content title="Home"/>
             </Appbar.Header>
 
             <View style={styles.home_view}>
