@@ -17,6 +17,14 @@
         {
           "locationWhenInUsePermission": "Allow $(Traffic Recognition) to access your location"
         }
+      ],
+      [
+        "expo-media-library",
+        {
+          "photosPermission": "Allow $(Traffic Recognition) to access your photos.",
+          "savePhotosPermission": "Allow $(Traffic Recognition) to save photos.",
+          "isAccessMediaLocationEnabled": true
+        }
       ]
     ],
     "updates": {
