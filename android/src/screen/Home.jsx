@@ -1,4 +1,4 @@
-import {View, Text, Platform, BackHandler, Dimensions} from "react-native";
+import {View, Text, Platform, BackHandler, Dimensions, Image} from "react-native";
 import React, {useEffect, useState} from "react";
 import {Appbar, Button, Card, Title, Paragraph, Dialog, Portal, Provider} from 'react-native-paper';
 import {Colors} from '../theme/Colors'
@@ -64,11 +64,15 @@ export default function Home({ navigation }) {
                 <Dialog visible={visible} onDismiss={hideDialog} style={styles.dialog_view}>
                     <Dialog.Title style={styles.dialog_text}>When light turns green</Dialog.Title>
                     <Dialog.Content>
-                        <Paragraph>AN Image here</Paragraph>
+                        <Image style={styles.image}
+                            source={require('../../../assets/pictures/Go.png')}
+                        />
                     </Dialog.Content>
                     <Dialog.Title style={styles.dialog_text}>When light turns red</Dialog.Title>
                     <Dialog.Content>
-                        <Paragraph>AN Image here</Paragraph>
+                        <Image style={styles.image}
+                            source={require('../../../assets/pictures/Stop.png')}
+                        />
                     </Dialog.Content>
                     <Dialog.Actions>
                         <Button buttonColor={Colors.colors.secondary}

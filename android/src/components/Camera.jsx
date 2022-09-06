@@ -1,11 +1,13 @@
 import { Camera, CameraType } from 'expo-camera';
-import { useState } from 'react';
+import { useState, useRef } from 'react';
 import { Button, StyleSheet, Text, TouchableOpacity, View } from 'react-native';
 import BottomBar from "./BottomBar";
 import style1 from '../theme/Styles'
 import {Appbar} from "react-native-paper";
 
-export default function TrafficCamera({navigation}) {
+export default function TrafficCamera({navigation},props) {
+    const [camera, setCamera] = useState(null);
+    const [image, setImage] = useState(null);
     const [type, setType] = useState(CameraType.back);
     const [permission, requestPermission] = Camera.useCameraPermissions();
 
@@ -36,6 +38,12 @@ export default function TrafficCamera({navigation}) {
     //    modelarts function starts here
     }
 
+    const __clickPicture = async ()=>{
+        if(camera){
+            const data = await camera.takePictureAsync(null)
+            setImage(data.uri);
+        }
+    }
     return (
         <View style={styles.container}>
             <Camera style={styles.camera}
@@ -51,9 +59,10 @@ export default function TrafficCamera({navigation}) {
                         <Appbar.Content title="Camera"/>
                         <Appbar.Action
                             title={"Flip Camera"}
-                            icon={'camera'}
+                            icon={'camera-flip'}
                             onPress={toggleCameraType}
                             />
+                        <Appbar.Action icon={'camera'} onPress={__clickPicture}/>
                     </Appbar.Header>
                     <BottomBar/>
                 </View>

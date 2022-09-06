@@ -5,8 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a00a3f1f-a9de-486b-8e93-1c164e92b38e" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/assets/pictures/Go.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/pictures/Stop.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/connect.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/src/components/Camera.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/android/src/components/Camera.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/android/src/screen/Home.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/android/src/screen/Home.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/src/theme/Styles.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/android/src/theme/Styles.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -110,7 +117,9 @@
       <workItem from="1662191258584" duration="1247000" />
       <workItem from="1662219149794" duration="1059000" />
       <workItem from="1662266278970" duration="5749000" />
-      <workItem from="1662354110022" duration="301000" />
+      <workItem from="1662354110022" duration="345000" />
+      <workItem from="1662375002964" duration="167000" />
+      <workItem from="1662433084081" duration="3270000" />
     </task>
     <servers />
   </component>
@@ -139,7 +148,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/android/src/theme/Styles.jsx</url>
-          <line>136</line>
+          <line>140</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
       </breakpoints>

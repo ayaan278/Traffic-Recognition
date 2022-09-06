@@ -25,6 +25,10 @@ export default StyleSheet.create({
         margin: 15,
         backgroundColor: Colors.colors.secondary,
     },
+    image: {
+        width: '100%',
+        height: 150,
+    },
     //-----------------------------------------------------------------
     loader_view: {
         flex:1,
