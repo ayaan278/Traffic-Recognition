@@ -10,9 +10,7 @@
     <list default="true" id="a00a3f1f-a9de-486b-8e93-1c164e92b38e" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/android/src/components/Camera.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/android/src/components/Camera.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.json" beforeDir="false" afterPath="$PROJECT_DIR$/app.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/connect.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/connect.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -120,6 +118,8 @@
       <workItem from="1662354110022" duration="345000" />
       <workItem from="1662375002964" duration="167000" />
       <workItem from="1662433084081" duration="7807000" />
+      <workItem from="1662446480324" duration="4086000" />
+      <workItem from="1662519777659" duration="3846000" />
     </task>
     <servers />
   </component>
