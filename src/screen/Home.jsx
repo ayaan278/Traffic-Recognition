@@ -43,7 +43,7 @@ export default function Home({ navigation }) {
                 <Card>
                     <Card.Content>
                         <Title>Welcome, {auth.currentUser?.displayName}</Title>
-                        <Paragraph>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At consequuntur dignissimos eius facere, fuga harum, laudantium magnam minus molestiae necessitatibus nesciunt nobis perferendis perspiciatis praesentium quae reiciendis rerum soluta suscipit.</Paragraph>
+                        <Paragraph>Traffic Recognition assistance is your assistance to help you drive safely and carefully, Just mount your Phone on Phone holder and start driving session, The app will tell you the color when you capture the picture of the traffic light using the camera. </Paragraph>
                     </Card.Content>
 
                     <Card.Content>
