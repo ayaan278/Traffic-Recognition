@@ -40,7 +40,7 @@ export default function TrafficCamera({navigation},props) {
                         buttonColor={Colors.colors.secondary}
                         mode="contained"
                         onPress={requestPermission}
-                        title="Grant permission" />
+                        >Grant Permission</Button>
             </View>
         );
     }

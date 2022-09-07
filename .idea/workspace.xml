@@ -9,9 +9,7 @@
   <component name="ChangeListManager">
     <list default="true" id="a00a3f1f-a9de-486b-8e93-1c164e92b38e" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.json" beforeDir="false" afterPath="$PROJECT_DIR$/app.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Camera.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Camera.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/screen/Home.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/screen/Home.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -120,7 +118,8 @@
       <workItem from="1662433084081" duration="7807000" />
       <workItem from="1662446480324" duration="4086000" />
       <workItem from="1662519777659" duration="8547000" />
-      <workItem from="1662533081693" duration="3665000" />
+      <workItem from="1662533081693" duration="4538000" />
+      <workItem from="1662540824703" duration="3298000" />
     </task>
     <servers />
   </component>
