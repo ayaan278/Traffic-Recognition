@@ -1,9 +1,9 @@
 import { StyleSheet, Text, View } from 'react-native';
 import { Provider as PaperProvider } from 'react-native-paper';
 import { NavigationContainer } from '@react-navigation/native';
-import Routes from "./android/src/routes/Routes"
+import Routes from "./src/routes/Routes"
 import React, { useState, useEffect } from "react";
-import SimpleLoader from "./android/src/components/SimpleLoader";
+import SimpleLoader from "./src/components/SimpleLoader";
 
 export default function App() {
     const [show, setShow] = useState(false);

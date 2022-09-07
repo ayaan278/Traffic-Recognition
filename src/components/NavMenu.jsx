@@ -3,7 +3,7 @@ import { Button, DrawerLayoutAndroid, Text, StyleSheet, View } from "react-nativ
 import { Drawer, Divider, IconButton } from 'react-native-paper';
 import styles from '../theme/Styles'
 import {Colors} from '../theme/Colors'
-import { auth } from '../../../firebase'
+import { auth } from '../../firebase'
 
 const NavMenu = ({navigation}) => {
 

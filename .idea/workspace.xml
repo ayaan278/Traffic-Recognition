@@ -8,9 +8,29 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a00a3f1f-a9de-486b-8e93-1c164e92b38e" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/eas.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/src/components/Camera.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/android/src/components/Camera.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/ android-manifest.plugin.js" beforeDir="false" afterPath="$PROJECT_DIR$/ android-manifest.plugin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/src/components/BottomBar.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/src/components/Camera.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Camera.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/src/components/Chart.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Chart.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/src/components/NavMenu.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/NavMenu.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/src/components/SimpleLoader.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SimpleLoader.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/src/components/SpeechButton.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/src/routes/Routes.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/Routes.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/src/screen/AccountSettings.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/screen/AccountSettings.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/src/screen/Home.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/screen/Home.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/src/screen/Login.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/screen/Login.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/src/screen/Permissions.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/screen/Permissions.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/src/screen/PrivacyAndData.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/screen/PrivacyAndData.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/src/screen/ResetPassword.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/screen/ResetPassword.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/src/screen/Signup.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/screen/Signup.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/src/theme/Colors.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/theme/Colors.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/src/theme/Styles.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/theme/Styles.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.json" beforeDir="false" afterPath="$PROJECT_DIR$/app.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/connect.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -52,11 +72,11 @@
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Windows.old\Users\ayaan\Traffic-Recognition" />
       <recent name="C:\Windows.old\Users\ayaan\Traffic-Recognition\android\src\components\elements" />
       <recent name="C:\Windows.old\Users\ayaan\Traffic-Recognition\android\src\components\layout" />
       <recent name="C:\Windows.old\Users\ayaan\Traffic-Recognition\android\src\components" />
       <recent name="C:\Windows.old\Users\ayaan\Traffic-Recognition\android\src\screen" />
-      <recent name="C:\Windows.old\Users\ayaan\Traffic-Recognition\Native" />
     </key>
   </component>
   <component name="RunManager">
@@ -119,7 +139,7 @@
       <workItem from="1662375002964" duration="167000" />
       <workItem from="1662433084081" duration="7807000" />
       <workItem from="1662446480324" duration="4086000" />
-      <workItem from="1662519777659" duration="3846000" />
+      <workItem from="1662519777659" duration="8540000" />
     </task>
     <servers />
   </component>
@@ -147,7 +167,7 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/android/src/theme/Styles.jsx</url>
+          <url>file://$PROJECT_DIR$/src/theme/Styles.jsx</url>
           <line>140</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>

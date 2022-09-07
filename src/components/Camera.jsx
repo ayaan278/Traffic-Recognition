@@ -1,13 +1,11 @@
 import { Camera, CameraType } from 'expo-camera';
 import {useState, useRef, useEffect} from 'react';
 import { Button, StyleSheet, Text, TouchableOpacity, View } from 'react-native';
-import BottomBar from "./BottomBar";
 import style1 from '../theme/Styles'
 import {Appbar, IconButton} from "react-native-paper";
 // import * as MediaLibrary from 'expo-media-library';
 import {Colors} from "../theme/Colors";
 import * as Speech from 'expo-speech';
-import SpeechButton from "./SpeechButton";
 import * as React from "react";
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 

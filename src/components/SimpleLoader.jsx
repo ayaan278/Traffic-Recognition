@@ -19,7 +19,7 @@ export default function SimpleLoader(){
                     height: 70,
                 }}
                 // Find more Lottie files at https://lottiefiles.com/featured
-                source={require('../../../assets/Lottie/Loader.json')}
+                source={require('../../assets/Lottie/Loader.json')}
             />
         </View>
     )

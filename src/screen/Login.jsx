@@ -3,7 +3,7 @@ import {KeyboardAvoidingView, TouchableOpacity, TouchableWithoutFeedback, View} 
 import {Button, Text, TextInput} from 'react-native-paper'
 import styles from '../theme/Styles';
 import {Colors} from '../theme/Colors'
-import {auth} from '../../../firebase'
+import {auth} from '../../firebase'
 
 export default function Login({ navigation }) {
     const [email, setEmail] = useState('')

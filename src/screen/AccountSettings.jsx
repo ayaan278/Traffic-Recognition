@@ -2,7 +2,7 @@ import {View, Text, KeyboardAvoidingView, TouchableWithoutFeedback, Platform, Ke
 import React,{useState, useEffect} from "react";
 import {Appbar, Button, Divider, HelperText, Dialog, Portal, Paragraph, TextInput} from 'react-native-paper';
 import styles from "../theme/Styles";
-import {auth} from "../../../firebase"
+import {auth} from "../../firebase"
 import {Colors} from "../theme/Colors";
 
 export default function AccountSettings({ navigation }) {

@@ -41,7 +41,7 @@ export default function PrivacyAndData({ navigation }) {
                             backgroundColor: '#eee',
                         }}
                         // Find more Lottie files at https://lottiefiles.com/featured
-                        source={require('../../../assets/Lottie/Privacy.json')}
+                        source={require('../../assets/Lottie/Privacy.json')}
                     />
                 </Card.Content>
 

@@ -4,7 +4,7 @@ import {Appbar, Button, Card, Title, Paragraph, Dialog, Portal, Provider} from '
 import {Colors} from '../theme/Colors'
 import styles from "../theme/Styles"
 import SimpleLoader from "../components/SimpleLoader"
-import {auth} from '../../../firebase'
+import {auth} from '../../firebase'
 import Charts from "../components/Chart";
 const MORE_ICON = Platform.OS === 'ios' ? 'dots-horizontal' : 'menu';
 
@@ -65,13 +65,13 @@ export default function Home({ navigation }) {
                     <Dialog.Title style={styles.dialog_text}>When light turns green</Dialog.Title>
                     <Dialog.Content>
                         <Image style={styles.image}
-                            source={require('../../../assets/pictures/Go.png')}
+                            source={require('../../assets/pictures/Go.png')}
                         />
                     </Dialog.Content>
                     <Dialog.Title style={styles.dialog_text}>When light turns red</Dialog.Title>
                     <Dialog.Content>
                         <Image style={styles.image}
-                            source={require('../../../assets/pictures/Stop.png')}
+                            source={require('../../assets/pictures/Stop.png')}
                         />
                     </Dialog.Content>
                     <Dialog.Actions>

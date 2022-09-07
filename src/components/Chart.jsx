@@ -3,7 +3,7 @@ import { Defs, LinearGradient, Stop } from 'react-native-svg'
 import { LineChart, Grid, YAxis } from 'react-native-svg-charts'
 import { View } from 'react-native'
 import {Colors} from '../theme/Colors'
-import {auth} from "../../../firebase";
+import {auth} from "../../firebase";
 import {Title} from "react-native-paper";
 
 const Charts = () => {

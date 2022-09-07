@@ -2,7 +2,7 @@ import React, {useEffect, useState} from 'react'
 import {KeyboardAvoidingView, TouchableOpacity, TouchableWithoutFeedback, View} from 'react-native'
 import {Button, HelperText, Text, TextInput} from 'react-native-paper'
 import styles from "../theme/Styles";
-import {auth} from "../../../firebase";
+import {auth} from "../../firebase";
 import {Colors} from "../theme/Colors";
 
 

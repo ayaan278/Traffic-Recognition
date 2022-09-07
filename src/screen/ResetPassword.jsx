@@ -3,7 +3,7 @@ import {KeyboardAvoidingView, TouchableWithoutFeedback, TouchableOpacity, View} 
 import {Button, Paragraph, Text, TextInput, Portal, Dialog} from 'react-native-paper'
 import styles from '../theme/Styles';
 import {Colors} from '../theme/Colors'
-import { auth } from '../../../firebase'
+import { auth } from '../../firebase'
 
 export default function ResetPassword({navigation}){
     const [email, setEmail] = useState('')

@@ -34,7 +34,11 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "infoPlist": {
+        "NSPhotoLibraryUsageDescription": "Allow $(Traffic Recognition) to access your photos.",
+        "NSPhotoLibraryAddUsageDescription": "Allow $(Traffic Recognition) to save photos."
+      }
     },
     "android": {
       "adaptiveIcon": {
@@ -44,11 +48,20 @@
       "versionCode": 1,
       "permissions": [
         "android.permission.CAMERA",
-        "android.permission.RECORD_AUDIO"
-      ]
+        "android.permission.RECORD_AUDIO",
+        "android.permission.READ_EXTERNAL_STORAGE",
+        "android.permission.WRITE_EXTERNAL_STORAGE",
+        "android.permission.ACCESS_MEDIA_LOCATION"
+      ],
+      "package": "com.ayaan278.Native"
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "6206a6ed-7b82-48af-9e64-eb34d9001f33"
+      }
     }
   }
 }
