@@ -8,6 +8,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a00a3f1f-a9de-486b-8e93-1c164e92b38e" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/token.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Camera.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Camera.jsx" afterDir="false" />
     </list>
@@ -119,7 +120,10 @@
       <workItem from="1662446480324" duration="4086000" />
       <workItem from="1662519777659" duration="8547000" />
       <workItem from="1662533081693" duration="4538000" />
-      <workItem from="1662540824703" duration="3298000" />
+      <workItem from="1662540824703" duration="4561000" />
+      <workItem from="1662546021055" duration="1152000" />
+      <workItem from="1662711450836" duration="3143000" />
+      <workItem from="1663128863571" duration="6322000" />
     </task>
     <servers />
   </component>
