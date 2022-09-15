@@ -8,9 +8,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a00a3f1f-a9de-486b-8e93-1c164e92b38e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/token.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Camera.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Camera.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/token.js" beforeDir="false" afterPath="$PROJECT_DIR$/token.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -123,7 +123,11 @@
       <workItem from="1662540824703" duration="4561000" />
       <workItem from="1662546021055" duration="1152000" />
       <workItem from="1662711450836" duration="3143000" />
-      <workItem from="1663128863571" duration="6322000" />
+      <workItem from="1663128863571" duration="7146000" />
+      <workItem from="1663150691942" duration="3522000" />
+      <workItem from="1663155264505" duration="744000" />
+      <workItem from="1663160496762" duration="32000" />
+      <workItem from="1663253381367" duration="2380000" />
     </task>
     <servers />
   </component>

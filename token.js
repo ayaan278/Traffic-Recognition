@@ -15,7 +15,7 @@ export default function getAuth (){
     axios(config)
         .then(function (response) {
             //This returns the token that is only valid for 24 hours
-            console.log(JSON.stringify(response.headers['x-subject-token']));
+            // console.log(JSON.stringify(response.headers['x-subject-token']));
             // console.log(response.data);
             return JSON.stringify(response.headers['x-subject-token'])
         })

@@ -10,19 +10,21 @@ import * as React from "react";
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import getAuth from '../../token'
 
-var axios = require('axios');
-var FormData = require('form-data');
+const axios = require('axios');
+const FormData = require('form-data');
 
 const BOTTOM_APPBAR_HEIGHT = 50;
 
 export default function TrafficCamera({navigation},props) {
     const { bottom } = useSafeAreaInsets();
-    const [cameraRef, setCameraRef] = useState(null)
+    // const [cameraRef, setCameraRef] = useState(null)
+    const cameraRef = React.createRef()
     const [type, setType] = useState(CameraType.back);
     const [permission, requestPermission] = Camera.useCameraPermissions();
     const [answer, setAnswer] = useState("Recognition failed");
     const [token, setToken] = useState(null);
     const [visible, setVisible] = React.useState(false);
+    const [photo, setPhoto] = useState(null);
 
     const showDialog = () => setVisible(true);
     const hideDialog = () => setVisible(false);
@@ -71,37 +73,63 @@ export default function TrafficCamera({navigation},props) {
     }
     const startModel = () =>{
         setToken(getAuth);
-        console.log(token);
+        // console.log(token);
     }
     const clickPicture = async ()=>{
-        if(cameraRef){
-            const option = { quality: 0.7, base64: true };
-            const picture = await cameraRef.takePictureAsync(option).then(()=>{
-                console.log("picture clicked");
-            });
+        if(cameraRef.current){
+            const option = { quality: 1, base64: true, exif:false };
+            let pic = await cameraRef.current.takePictureAsync(option);
+            // console.log(pic.uri);
+            setPhoto(pic);
 
-            var data = new FormData();
+            if(photo){
+                const data = await new FormData();
+                console.log(data);
+                // const source = picture.base64;
+                // let base64Img = `data:image/jpg;base64,${source}`;
+                // console.log(base64Img);
 
-            data.set('images', picture);
+                data.append('images', photo);
+                console.log(data);
+                try {
+                    const config = ({
+                        method: "post",
+                        url: 'https://2fec676ce4e447d0980abfbeb404b0a3.apig.ap-southeast-3.huaweicloudapis.com/v1/infers/70cc6118-c616-4cb0-acd8-4d2442570deb',
+                        data: data,
+                        headers: {
+                            'X-Auth-Token': token,
+                                ...data.getHeaders()
+                        },
+                    });
+                    axios(config)
+                        .then(function (response) {
+                            console.log(JSON.stringify(response.data));
+                        })
+                        .catch(function (error) {
+                            console.log(error);
+                        });
+                } catch(error) {
+                    console.log(error)
+                }
+            }
+                // var config = {
+                //     method: 'post',
+                //     url: 'https://2fec676ce4e447d0980abfbeb404b0a3.apig.ap-southeast-3.huaweicloudapis.com/v1/infers/70cc6118-c616-4cb0-acd8-4d2442570deb',
+                //     headers: {
+                //         'X-Auth-Token': token,
+                //         ...data.getHeaders()
+                //     },
+                //     data : data
+                // };
+                //
+                // axios(config)
+                //     .then(function (response) {
+                //         console.log(JSON.stringify(response.data));
+                //     })
+                //     .catch(function (error) {
+                //         console.log(error);
+                //     });
 
-            var config = {
-                method: 'post',
-                url: 'https://2fec676ce4e447d0980abfbeb404b0a3.apig.ap-southeast-3.huaweicloudapis.com/v1/infers/70cc6118-c616-4cb0-acd8-4d2442570deb',
-                headers: {
-                    'Content-Type': 'multipart/form-data',
-                    'X-Auth-Token': token,
-                    ...data.getHeaders()
-                },
-                data : data
-            };
-
-            axios(config)
-                .then(function (response) {
-                    console.log(JSON.stringify(response.data));
-                })
-                .catch(function (error) {
-                    console.log(error);
-                });
 
             // if(answer==="Recognition failed"){
             //     showDialog();
@@ -114,8 +142,9 @@ export default function TrafficCamera({navigation},props) {
         <View style={styles.container}>
             <Camera style={styles.camera}
                     type={type}
-                    ref={ref => {
-                        setCameraRef(ref);}}
+                    ref={cameraRef}
+                    // ref={ref => {
+                    //     setCameraRef(ref);}}
                     onCameraReady={startModel}
                     ratio={'16:9'}>
                 <View style={styles.buttonContainer}>
