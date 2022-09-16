@@ -11,7 +11,8 @@ import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import getAuth from '../../token'
 
 const axios = require('axios');
-const FormData = require('form-data');
+import FormData, {getHeaders} from 'form-data';
+
 
 const BOTTOM_APPBAR_HEIGHT = 50;
 
@@ -84,52 +85,52 @@ export default function TrafficCamera({navigation},props) {
 
             if(photo){
                 const data = await new FormData();
-                console.log(data);
                 // const source = picture.base64;
                 // let base64Img = `data:image/jpg;base64,${source}`;
                 // console.log(base64Img);
 
-                data.append('images', photo);
+                data.append('images', {
+                    uri: photo.uri,
+                    name: photo.uri.split('/').pop(), //split the uri at / and get the last element of the resulting array which actually is the name with the image extention (e.g, abc.jpg)
+                    type: photo.type // type needs to be modified. keep reading
+                })
                 console.log(data);
-                try {
-                    const config = ({
-                        method: "post",
-                        url: 'https://2fec676ce4e447d0980abfbeb404b0a3.apig.ap-southeast-3.huaweicloudapis.com/v1/infers/70cc6118-c616-4cb0-acd8-4d2442570deb',
-                        data: data,
-                        headers: {
-                            'X-Auth-Token': token,
-                                ...data.getHeaders()
-                        },
-                    });
-                    axios(config)
-                        .then(function (response) {
-                            console.log(JSON.stringify(response.data));
-                        })
-                        .catch(function (error) {
-                            console.log(error);
-                        });
-                } catch(error) {
-                    console.log(error)
-                }
-            }
-                // var config = {
-                //     method: 'post',
-                //     url: 'https://2fec676ce4e447d0980abfbeb404b0a3.apig.ap-southeast-3.huaweicloudapis.com/v1/infers/70cc6118-c616-4cb0-acd8-4d2442570deb',
-                //     headers: {
-                //         'X-Auth-Token': token,
-                //         ...data.getHeaders()
-                //     },
-                //     data : data
-                // };
-                //
-                // axios(config)
-                //     .then(function (response) {
-                //         console.log(JSON.stringify(response.data));
-                //     })
-                //     .catch(function (error) {
-                //         console.log(error);
-                //     });
 
+                const requestOptions = {
+                    method: 'POST',
+                    headers: {
+                        'X-Auth-Token': token,
+                        'content-type': 'multipart/form-data',
+                    },
+                    body: data,
+                    redirect: 'follow'
+                };
+
+                await fetch("https://2fec676ce4e447d0980abfbeb404b0a3.apig.ap-southeast-3.huaweicloudapis.com/v1/infers/70cc6118-c616-4cb0-acd8-4d2442570deb",
+                    requestOptions)
+                    .then(response => response.text())
+                    .then(result => console.log(result))
+                    .catch(error => console.log('error', error));
+                // try {
+                //     module.exports = typeof self == 'object' ? self.FormData : window.FormData;
+                //     await axios.post("https://2fec676ce4e447d0980abfbeb404b0a3.apig.ap-southeast-3.huaweicloudapis.com/v1/infers/70cc6118-c616-4cb0-acd8-4d2442570deb"
+                //         , data
+                //         , {
+                //             headers: {
+                //             'X-Auth-Token': token,
+                //             'content-type': 'multipart/form-data',
+                //         }})
+                //         .then(function (response) {
+                //             console.log(JSON.stringify(response.headers));
+                //         })
+                //         .catch(function (error) {
+                //             console.log(error);
+                //         });
+                // } catch(error) {
+                //     console.log(error)
+                // }
+
+            }
 
             // if(answer==="Recognition failed"){
             //     showDialog();
