@@ -8,11 +8,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a00a3f1f-a9de-486b-8e93-1c164e92b38e" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/assets/Lottie/Go.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/Lottie/Stop.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Camera.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Camera.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/token.js" beforeDir="false" afterPath="$PROJECT_DIR$/token.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,20 +48,20 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">
-    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="RunOnceActivity.cidr.known.project.marker" value="true" />
-    <property name="cidr.known.project.marker" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../testing" />
-  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;yarn&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Windows.old\Users\ayaan\Traffic-Recognition\assets\Lottie" />
       <recent name="C:\Windows.old\Users\ayaan\Traffic-Recognition" />
       <recent name="C:\Windows.old\Users\ayaan\Traffic-Recognition\android\src\components\elements" />
       <recent name="C:\Windows.old\Users\ayaan\Traffic-Recognition\android\src\components\layout" />
       <recent name="C:\Windows.old\Users\ayaan\Traffic-Recognition\android\src\components" />
-      <recent name="C:\Windows.old\Users\ayaan\Traffic-Recognition\android\src\screen" />
     </key>
   </component>
   <component name="RunManager">
@@ -75,6 +75,11 @@
       <envs />
       <method v="2" />
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="npm.start (3)" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -130,6 +135,8 @@
       <workItem from="1663160496762" duration="32000" />
       <workItem from="1663253381367" duration="2380000" />
       <workItem from="1663297816997" duration="3690000" />
+      <workItem from="1663510859476" duration="70000" />
+      <workItem from="1663513922792" duration="5947000" />
     </task>
     <servers />
   </component>

@@ -1,35 +1,37 @@
 import { Camera, CameraType } from 'expo-camera';
-import {useState, useRef, useEffect} from 'react';
+import React, {useState, useRef, useEffect} from 'react';
 import { Image, StyleSheet, Text, TouchableOpacity, View} from 'react-native';
 import style1 from '../theme/Styles'
 import {Appbar, Dialog, IconButton, Portal, Button} from "react-native-paper";
-// import * as MediaLibrary from 'expo-media-library';
 import {Colors} from "../theme/Colors";
 import * as Speech from 'expo-speech';
-import * as React from "react";
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import getAuth from '../../token'
-
-const axios = require('axios');
-import FormData, {getHeaders} from 'form-data';
-
+import LottieView from "lottie-react-native";
+import FormData from 'form-data';
+import axios from "axios";
 
 const BOTTOM_APPBAR_HEIGHT = 50;
 
 export default function TrafficCamera({navigation},props) {
     const { bottom } = useSafeAreaInsets();
-    // const [cameraRef, setCameraRef] = useState(null)
     const cameraRef = React.createRef()
     const [type, setType] = useState(CameraType.back);
     const [permission, requestPermission] = Camera.useCameraPermissions();
-    const [answer, setAnswer] = useState("Recognition failed");
     const [token, setToken] = useState(null);
     const [visible, setVisible] = React.useState(false);
+    const [visibleGo, setVisibleGo] = React.useState(false);
+    const [visibleStop, setVisibleStop] = React.useState(false);
     const [photo, setPhoto] = useState(null);
 
     const showDialog = () => setVisible(true);
     const hideDialog = () => setVisible(false);
+    const showDialogGo = () => setVisibleGo(true);
+    const hideDialogGo = () => setVisibleGo(false);
+    const showDialogStop = () => setVisibleStop(true);
+    const hideDialogStop = () => setVisibleStop(false);
 
+    let ans = "";
 
     if (!permission) {
         // Camera permissions are still loading
@@ -59,35 +61,29 @@ export default function TrafficCamera({navigation},props) {
 
     const Speak = () =>{
         // if(Speech){
-        if(answer==="go"){
+        if(ans==="go"){
             const Go = 'Go';
             Speech.speak(Go);
-        }else if(answer==="stop"){
+        }else if(ans==="stop"){
             const Stop = 'Stop';
             Speech.speak(Stop);
         }else{
             const Error = 'Unable to recognize at the moment, Please try again letter';
             Speech.speak(Error);
         }
-
-
     }
-    const startModel = () =>{
-        setToken(getAuth);
-        // console.log(token);
-    }
+    // const modelStart = () =>{
+    //     setToken(getAuth);
+    //     // console.log(token);
+    // }
     const clickPicture = async ()=>{
         if(cameraRef.current){
             const option = { quality: 1, base64: true, exif:false };
             let pic = await cameraRef.current.takePictureAsync(option);
-            // console.log(pic.uri);
             setPhoto(pic);
 
             if(photo){
                 const data = await new FormData();
-                // const source = picture.base64;
-                // let base64Img = `data:image/jpg;base64,${source}`;
-                // console.log(base64Img);
 
                 data.append('images', {
                     uri: photo.uri,
@@ -96,19 +92,33 @@ export default function TrafficCamera({navigation},props) {
                 })
 
                 const requestOptions = {
-                    method: 'PUT',
+                    method: 'POST',
                     headers: {
-                        'X-Auth-Token': token,
+                        'X-Apig-Appcode': '24028444b26e481bbc0a1236edb23344809d46f9fcec4acfab7fb8a276c9c8e3',
                         'content-type': 'multipart/form-data',
                     },
                     body: data,
                     redirect: 'follow'
                 };
 
-                await fetch("https://2fec676ce4e447d0980abfbeb404b0a3.apig.ap-southeast-3.huaweicloudapis.com/v1/infers/da3ac1a0-67bd-4c4c-a2ae-2e0b4feefd88",
+                await fetch("https://01516f373f434921a874bf502a986a58.apig.ap-southeast-3.huaweicloudapis.com/v1/infers/70cc6118-c616-4cb0-acd8-4d2442570deb",
                     requestOptions)
                     .then(response => response.text())
-                    .then(result => console.log(result))
+                    .then(function (result){
+                        console.log(result);
+                        console.log(result.includes('go'));
+                        if(result.includes('go')===true){
+                            ans="go";
+                        }
+                        else if(result.includes('stop')===true){
+                            ans="stop";
+                        }
+                        else{
+                            ans= "Recognition failed"
+                        }
+                        console.log(ans)
+
+                    })
                     .catch(error => console.log('error', error));
                 // try {
                 //     module.exports = typeof self == 'object' ? self.FormData : window.FormData;
@@ -130,11 +140,16 @@ export default function TrafficCamera({navigation},props) {
                 // }
 
             }
-
-            // if(answer==="Recognition failed"){
-            //     showDialog();
-            // }
-
+            if(ans==="go"){
+                showDialogGo();
+            }
+            else if(ans==="stop"){
+                showDialogStop();
+            }
+            else if (ans==="Recognition failed"){
+                showDialog();
+            }
+           ans = ""
         }
     }
 
@@ -143,9 +158,7 @@ export default function TrafficCamera({navigation},props) {
             <Camera style={styles.camera}
                     type={type}
                     ref={cameraRef}
-                    // ref={ref => {
-                    //     setCameraRef(ref);}}
-                    onCameraReady={startModel}
+                    // onCameraReady={modelStart}
                     ratio={'16:9'}>
                 <View style={styles.buttonContainer}>
                     <Appbar.Header style={style1.header} mode={'small'}>
@@ -188,7 +201,45 @@ export default function TrafficCamera({navigation},props) {
                                         onPress={hideDialog}>Okay</Button>
                             </Dialog.Actions>
                         </Dialog>
-                    </Portal>
+                        <Dialog visible={visibleGo} onDismiss={hideDialogGo} style={style1.dialog_view}>
+                            <View style={styles.loader_view}>
+                                <LottieView
+                                    autoPlay
+                                    style={{
+                                        width: 150,
+                                        height: 150,
+                                    }}
+                                    source={require('../../assets/Lottie/Go.json')}
+                                />
+                            </View>
+                            <Dialog.Title style={style1.dialog_text}>The light is Green, please Go.</Dialog.Title>
+                            <Dialog.Actions>
+                                <Button buttonColor={Colors.colors.secondary}
+                                        mode="contained"
+                                        onPress={hideDialogGo}>Okay</Button>
+                            </Dialog.Actions>
+                        </Dialog>
+                        <Dialog visible={visibleStop} onDismiss={hideDialogStop} style={style1.dialog_view}>
+                            <View style={styles.loader_view}>
+                                <LottieView
+                                    autoPlay
+                                    style={{
+                                        width: 100,
+                                        height: 100,
+                                    }}
+                                    source={require('../../assets/Lottie/Stop.json')}
+                                />
+                            </View>
+                            <Dialog.Title style={style1.dialog_text}>The light is Red, please Stop.</Dialog.Title>
+                            <Dialog.Actions>
+                                <Button buttonColor={Colors.colors.secondary}
+                                        mode="contained"
+                                        onPress={hideDialogStop}>Okay</Button>
+                            </Dialog.Actions>
+                        </Dialog>
+                </Portal>
+
+
                 </View>
             </Camera>
         </View>
@@ -228,5 +279,13 @@ const styles = StyleSheet.create({
         fontSize: 24,
         fontWeight: 'bold',
         color: 'white',
+    },
+    loader_view: {
+        flex:1,
+        padding: 35,
+        margin: 5,
+        flexDirection:'row',
+        alignItems:'center',
+        justifyContent:'center'
     },
 });
