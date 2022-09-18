@@ -92,12 +92,11 @@ export default function TrafficCamera({navigation},props) {
                 data.append('images', {
                     uri: photo.uri,
                     name: photo.uri.split('/').pop(), //split the uri at / and get the last element of the resulting array which actually is the name with the image extention (e.g, abc.jpg)
-                    type: photo.type // type needs to be modified. keep reading
+                    type: 'image/jpg' // type needs to be modified. keep reading
                 })
-                console.log(data);
 
                 const requestOptions = {
-                    method: 'POST',
+                    method: 'PUT',
                     headers: {
                         'X-Auth-Token': token,
                         'content-type': 'multipart/form-data',
@@ -106,7 +105,7 @@ export default function TrafficCamera({navigation},props) {
                     redirect: 'follow'
                 };
 
-                await fetch("https://2fec676ce4e447d0980abfbeb404b0a3.apig.ap-southeast-3.huaweicloudapis.com/v1/infers/70cc6118-c616-4cb0-acd8-4d2442570deb",
+                await fetch("https://2fec676ce4e447d0980abfbeb404b0a3.apig.ap-southeast-3.huaweicloudapis.com/v1/infers/da3ac1a0-67bd-4c4c-a2ae-2e0b4feefd88",
                     requestOptions)
                     .then(response => response.text())
                     .then(result => console.log(result))
