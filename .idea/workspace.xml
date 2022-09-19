@@ -8,11 +8,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a00a3f1f-a9de-486b-8e93-1c164e92b38e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/assets/Lottie/Go.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/Lottie/Stop.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/pictures/HDCLogo2-2.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/pictures/Logo.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Camera.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Camera.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/token.js" beforeDir="false" afterPath="$PROJECT_DIR$/token.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.json" beforeDir="false" afterPath="$PROJECT_DIR$/app.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,11 +56,11 @@
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Windows.old\Users\ayaan\Traffic-Recognition\assets\pictures" />
       <recent name="C:\Windows.old\Users\ayaan\Traffic-Recognition\assets\Lottie" />
       <recent name="C:\Windows.old\Users\ayaan\Traffic-Recognition" />
       <recent name="C:\Windows.old\Users\ayaan\Traffic-Recognition\android\src\components\elements" />
       <recent name="C:\Windows.old\Users\ayaan\Traffic-Recognition\android\src\components\layout" />
-      <recent name="C:\Windows.old\Users\ayaan\Traffic-Recognition\android\src\components" />
     </key>
   </component>
   <component name="RunManager">
@@ -136,7 +135,8 @@
       <workItem from="1663253381367" duration="2380000" />
       <workItem from="1663297816997" duration="3690000" />
       <workItem from="1663510859476" duration="70000" />
-      <workItem from="1663513922792" duration="5947000" />
+      <workItem from="1663513922792" duration="6549000" />
+      <workItem from="1663553797250" duration="850000" />
     </task>
     <servers />
   </component>

@@ -4,10 +4,10 @@
     "slug": "Native",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
+    "icon": "./assets/pictures/App-Logo.png",
     "userInterfaceStyle": "light",
     "splash": {
-      "image": "./assets/splash.png",
+      "image": "./assets/pictures/Logo.png",
       "resizeMode": "contain",
       "backgroundColor": "#222831"
     },
@@ -42,7 +42,7 @@
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
+        "foregroundImage": "./assets/pictures/Logo.png",
         "backgroundColor": "#222831"
       },
       "versionCode": 1,
