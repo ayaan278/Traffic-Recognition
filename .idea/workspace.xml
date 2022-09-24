@@ -8,8 +8,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a00a3f1f-a9de-486b-8e93-1c164e92b38e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/assets/pictures/HDCLogo2-2.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/pictures/Logo.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app.json" beforeDir="false" afterPath="$PROJECT_DIR$/app.json" afterDir="false" />
     </list>
@@ -136,7 +134,7 @@
       <workItem from="1663297816997" duration="3690000" />
       <workItem from="1663510859476" duration="70000" />
       <workItem from="1663513922792" duration="6549000" />
-      <workItem from="1663553797250" duration="850000" />
+      <workItem from="1663553797250" duration="2061000" />
     </task>
     <servers />
   </component>
