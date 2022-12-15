@@ -90,6 +90,7 @@ export default function TrafficCamera({navigation},props) {
                     name: photo.uri.split('/').pop(), //split the uri at / and get the last element of the resulting array which actually is the name with the image extention (e.g, abc.jpg)
                     type: 'image/jpg' // type needs to be modified. keep reading
                 })
+                console.log(data);
 
                 const requestOptions = {
                     method: 'POST',
@@ -100,7 +101,6 @@ export default function TrafficCamera({navigation},props) {
                     body: data,
                     redirect: 'follow'
                 };
-
                 await fetch("https://01516f373f434921a874bf502a986a58.apig.ap-southeast-3.huaweicloudapis.com/v1/infers/70cc6118-c616-4cb0-acd8-4d2442570deb",
                     requestOptions)
                     .then(response => response.text())

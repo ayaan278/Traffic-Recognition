@@ -9,7 +9,9 @@
   <component name="ChangeListManager">
     <list default="true" id="a00a3f1f-a9de-486b-8e93-1c164e92b38e" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.json" beforeDir="false" afterPath="$PROJECT_DIR$/app.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Camera.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Camera.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -135,6 +137,14 @@
       <workItem from="1663510859476" duration="70000" />
       <workItem from="1663513922792" duration="6549000" />
       <workItem from="1663553797250" duration="2061000" />
+      <workItem from="1666345502167" duration="442000" />
+      <workItem from="1668138764943" duration="22000" />
+      <workItem from="1668387973072" duration="7000" />
+      <workItem from="1669433483808" duration="13000" />
+      <workItem from="1669439118634" duration="4000" />
+      <workItem from="1669704095741" duration="20000" />
+      <workItem from="1671026524534" duration="2274000" />
+      <workItem from="1671080210247" duration="869000" />
     </task>
     <servers />
   </component>
