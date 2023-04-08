@@ -65,6 +65,6 @@ buck-out/
 .expo/*
 web-build/
 
-./token.js
+token.js
 
-./firebase.js
+firebase.js
